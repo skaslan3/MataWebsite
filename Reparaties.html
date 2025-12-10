@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Mata Computers - Professionele Reparatieservice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+          rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-50 antialiased overflow-x-hidden">
+<!-- Top Navigation -->
+<div class="relative flex w-full flex-col">
+    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-4 lg:px-10 py-3 bg-white dark:bg-[#1A2633]">
+        <div class="flex items-center gap-4 lg:gap-8">
+            <div class="flex items-center gap-4 text-slate-900 dark:text-white">
+                <div class="size-8 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-3xl">build_circle</span>
+                </div>
+                <a href="index.html">
+                    <h2 class="text-[#0d141b] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">
+                        Mata Computers
+                    </h2>
+                </a>
+            </div>
+            <div class="hidden lg:flex items-center gap-6 xl:gap-9">
+                <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
+                   href="Producten.html">Telefoons</a>
+                <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
+                   href="Producten.html">Laptops</a>
+                <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
+                   href="Producten.html">Accessoires</a>
+                <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
+                   href="Reparaties.html">Reparaties</a>
+                <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
+                   href="Contact.html">Over ons</a>
+            </div>
+        </div>
+        <div class="flex flex-1 justify-end gap-4 lg:gap-8 items-center">
+            <label class="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
+                <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                    <div class="text-slate-500 dark:text-slate-400 flex border-none bg-slate-100 dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg border-r-0">
+                        <span class="material-symbols-outlined">search</span>
+                    </div>
+                    <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-0 border-none bg-slate-100 dark:bg-slate-800 focus:border-none h-full placeholder:text-slate-500 dark:placeholder:text-slate-400 px-4 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal"
+                           placeholder="Zoek apparaat" value=""/>
+                </div>
+            </label>
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-blue-600 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                <span class="truncate">Maak afspraak</span>
+            </button>
+        </div>
+    </header>
+</div>
+
+<!-- Hero Section -->
+<div class="flex flex-col">
+    <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+        <div class="flex flex-col max-w-[1200px] flex-1">
+            <div class="@container">
+                <div class="@[480px]:p-4">
+                    <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-8 relative overflow-hidden"
+                         data-alt="Technician repairing a smartphone with precision tools"
+                         style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjPIMVg6GHjFk9AnrunlyjUBeYTdnUxaSJ7gElOZUmQ49LOObOdBmkFlNlijHJFIgMFHPDemWB-pIwNO5P2e3e7knSZ7PwkJtJ2s8vHNCLjx4PKrtNU4eOeMzo7p26NUW7H4koncobhV3LgtT4NcjWnjD3an0NVxSlbpEQ9Zu4fF4V9dW0RQlhc932-w8K0zNHcB3i28fVVW0F8DU7FACF7KpqytkyKvrv3mmcPcfCpQIUY8DmhkUGnYhreEQy5CwYzasFnur6IOGN");'>
+                        <div class="flex flex-col gap-4 text-center z-10 max-w-2xl">
+                            <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-5xl lg:text-6xl">
+                                Professionele Reparaties voor uw Telefoon &amp; Laptop
+                            </h1>
+                            <h2 class="text-slate-200 text-base font-normal leading-normal md:text-lg">
+                                Is uw scherm gebarsten of de batterij snel leeg? Wij repareren uw apparaat snel,
+                                vakkundig en betrouwbaar met maar liefst 6 maanden garantie.
+                            </h2>
+                        </div>
+                        <div class="flex flex-wrap gap-3 justify-center z-10 w-full">
+                            <button class="scroll-afspraak flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary hover:bg-blue-600 text-white text-base font-bold leading-normal tracking-[0.015em] transition-all shadow-lg hover:shadow-xl">
+                                <span class="truncate">Maak afspraak</span>
+                            </button>
+                            <button class="scroll-prijzen flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 text-base font-bold leading-normal tracking-[0.015em] transition-all">
+                                <span class="truncate">Bekijk prijzen</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Process Section (How it works) -->
+<div class="px-4 md:px-10 lg:px-40 py-10 bg-white dark:bg-[#1A2633] border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-[1200px] mx-auto">
+        <h2 class="text-slate-900 dark:text-white text-center text-2xl font-bold mb-10">Hoe werkt het?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center text-center gap-4">
+                <div class="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-3xl">calendar_month</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white">1. Maak een afspraak</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Plan uw reparatie online of kom direct
+                        langs in onze winkel.</p>
+                </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center text-center gap-4">
+                <div class="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-3xl">build</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white">2. Reparatie</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">Onze experts repareren uw apparaat, vaak
+                        binnen 30 minuten.</p>
+                </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center text-center gap-4">
+                <div class="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-3xl">check_circle</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white">3. Klaar!</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm mt-2">U ontvangt een bericht zodra uw apparaat
+                        weer als nieuw is.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Device Selector & Header -->
+<div class="flex flex-col">
+    <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+        <div class="flex flex-col max-w-[960px] flex-1">
+            <h2 class="text-slate-900 dark:text-white text-[28px] font-bold leading-tight tracking-[-0.015em] pb-6 pt-5 text-center">
+                Kies uw reparatie</h2>
+            <!-- Tabs -->
+            <div class="pb-3">
+                <div class="flex border-b border-slate-200 dark:border-slate-700 px-4 justify-center gap-8">
+                    <a class="group flex flex-col items-center justify-center border-b-[3px] border-b-primary px-8 pb-3 pt-2 cursor-pointer transition-all"
+                       href="#">
+                        <div class="text-primary mb-2 transition-transform group-hover:scale-110">
+                            <span class="material-symbols-outlined text-3xl">smartphone</span>
+                        </div>
+                        <p class="text-primary text-sm font-bold leading-normal tracking-[0.015em]">Smartphone</p>
+                    </a>
+                    <a class="group flex flex-col items-center justify-center border-b-[3px] border-b-transparent hover:border-b-slate-300 dark:hover:border-b-slate-600 px-8 pb-3 pt-2 cursor-pointer transition-all"
+                       href="#">
+                        <div class="text-slate-400 dark:text-slate-500 mb-2 transition-transform group-hover:scale-110 group-hover:text-slate-600 dark:group-hover:text-slate-300">
+                            <span class="material-symbols-outlined text-3xl">laptop_mac</span>
+                        </div>
+                        <p class="text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200 text-sm font-bold leading-normal tracking-[0.015em]">
+                            Laptop</p>
+                    </a>
+                    <a class="group flex flex-col items-center justify-center border-b-[3px] border-b-transparent hover:border-b-slate-300 dark:hover:border-b-slate-600 px-8 pb-3 pt-2 cursor-pointer transition-all"
+                       href="#">
+                        <div class="text-slate-400 dark:text-slate-500 mb-2 transition-transform group-hover:scale-110 group-hover:text-slate-600 dark:group-hover:text-slate-300">
+                            <span class="material-symbols-outlined text-3xl">tablet_mac</span>
+                        </div>
+                        <p class="text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200 text-sm font-bold leading-normal tracking-[0.015em]">
+                            Tablet</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Features / Services Grid -->
+<div class="flex flex-col" id="prijzen">
+    <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+        <div class="flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-col gap-10 py-4 @container">
+                <div class="flex flex-col gap-4 text-center">
+                    <h3 class="text-slate-900 dark:text-white text-2xl font-bold">Veelvoorkomende Smartphone
+                        Reparaties</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-base max-w-[600px] mx-auto">
+                        Wij gebruiken uitsluitend originele onderdelen of onderdelen van de hoogste kwaliteit.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+                    <!-- Card 1 -->
+                    <div class="flex flex-row gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#1A2633] p-6 hover:shadow-md transition-shadow">
+                        <div class="text-primary shrink-0 bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center">
+                            <span class="material-symbols-outlined">broken_image</span>
+                        </div>
+                        <div class="flex flex-col gap-1 flex-1">
+                            <div class="flex justify-between items-start">
+                                <h2 class="text-slate-900 dark:text-white text-lg font-bold">Schermvervanging</h2>
+                                <span class="inline-block bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold px-2 py-1 rounded">Vanaf €59</span>
+                            </div>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Gebarsten scherm of strepen in
+                                beeld? Wij zetten er een nieuw scherm op binnen 30 minuten.</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="flex flex-row gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#1A2633] p-6 hover:shadow-md transition-shadow">
+                        <div class="text-primary shrink-0 bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center">
+                            <span class="material-symbols-outlined">battery_alert</span>
+                        </div>
+                        <div class="flex flex-col gap-1 flex-1">
+                            <div class="flex justify-between items-start">
+                                <h2 class="text-slate-900 dark:text-white text-lg font-bold">Batterij Vervangen</h2>
+                                <span class="inline-block bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold px-2 py-1 rounded">Vanaf €39</span>
+                            </div>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Gaat uw telefoon snel leeg? Een
+                                nieuwe batterij geeft uw apparaat een tweede leven.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="flex flex-row gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#1A2633] p-6 hover:shadow-md transition-shadow">
+                        <div class="text-primary shrink-0 bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center">
+                            <span class="material-symbols-outlined">water_drop</span>
+                        </div>
+                        <div class="flex flex-col gap-1 flex-1">
+                            <div class="flex justify-between items-start">
+                                <h2 class="text-slate-900 dark:text-white text-lg font-bold">Waterschade</h2>
+                                <span class="inline-block bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs font-bold px-2 py-1 rounded">Op aanvraag</span>
+                            </div>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Telefoon in het water gevallen?
+                                Wij reinigen en herstellen de schade professioneel.</p>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="flex flex-row gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#1A2633] p-6 hover:shadow-md transition-shadow">
+                        <div class="text-primary shrink-0 bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center">
+                            <span class="material-symbols-outlined">electrical_services</span>
+                        </div>
+                        <div class="flex flex-col gap-1 flex-1">
+                            <div class="flex justify-between items-start">
+                                <h2 class="text-slate-900 dark:text-white text-lg font-bold">Oplaadpoort</h2>
+                                <span class="inline-block bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold px-2 py-1 rounded">Vanaf €45</span>
+                            </div>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Laadt uw toestel niet meer goed
+                                op? Wij vervangen uw laadconnector snel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-4">
+                    <button id="openRepairDropdown"
+                            class="text-primary font-bold text-sm hover:underline flex items-center gap-1 cursor-pointer">
+                        Bekijk alle reparaties en prijzen
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+
+                <!-- Dropdown container (separate from the cards) -->
+                <div id="repairDropdown" class="max-w-[600px] mx-auto mt-6 border border-slate-200 dark:border-slate-700 bg-white dark:bg-[#1A2633] rounded-xl shadow-md transition-all duration-500 ease-in-out" style="display: none;">
+                    <div class="p-6">
+                        <h3 class="text-slate-900 dark:text-white text-lg font-bold mb-6 text-center">Selecteer uw apparaat</h3>
+
+                        <!-- BRAND -->
+                        <div class="flex flex-col gap-2 mb-4">
+                            <label class="text-slate-700 dark:text-slate-300 text-sm font-bold">Merk</label>
+                            <select id="brandSelect"
+                                    class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#16202a] px-4 py-3 text-slate-900 dark:text-white">
+                                <option value="">Selecteer merk...</option>
+                                <option value="apple">Apple</option>
+                                <option value="samsung">Samsung</option>
+                                <option value="google">Google</option>
+                            </select>
+                        </div>
+
+                        <!-- MODEL -->
+                        <div class="flex flex-col gap-2 mb-4">
+                            <label class="text-slate-700 dark:text-slate-300 text-sm font-bold">Model</label>
+                            <select id="modelSelect" disabled
+                                    class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#16202a] px-4 py-3 text-slate-900 dark:text-white disabled:opacity-50 disabled:cursor-not-allowed">
+                                <option value="">Selecteer eerst een merk...</option>
+                            </select>
+                        </div>
+
+                        <!-- COLOR -->
+                        <div class="flex flex-col gap-2 mb-4">
+                            <label class="text-slate-700 dark:text-slate-300 text-sm font-bold">Kleur</label>
+                            <select id="colorSelect" disabled
+                                    class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#16202a] px-4 py-3 text-slate-900 dark:text-white disabled:opacity-50 disabled:cursor-not-allowed">
+                                <option value="">Selecteer eerst een model...</option>
+                            </select>
+                        </div>
+
+                        <!-- Prices Section -->
+                        <div id="repairPrices" class="mt-6 p-4 bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hidden">
+                            <h4 class="font-bold mb-3 text-slate-900 dark:text-white text-base">Reparatie Prijzen:</h4>
+                            <ul class="space-y-2" id="pricesList"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Booking Form Section -->
+<div class="bg-white dark:bg-[#1A2633] py-16 border-t border-slate-200 dark:border-slate-800" id="afspraak">
+    <div class="px-4 md:px-10 lg:px-40 flex justify-center">
+        <div class="max-w-[800px] w-full bg-slate-50 dark:bg-slate-900 rounded-2xl p-8 lg:p-12 shadow-sm border border-slate-200 dark:border-slate-800">
+            <div class="text-center mb-10">
+                <h2 class="text-slate-900 dark:text-white text-3xl font-bold mb-4">Direct een afspraak maken?</h2>
+                <p class="text-slate-500 dark:text-slate-400">Vul het formulier in en wij nemen zo snel mogelijk contact
+                    met u op.</p>
+            </div>
+            <form action="https://api.web3forms.com/submit" class="space-y-6" id="appointmentForm" method="POST">
+
+                <!-- Hidden Access Key -->
+                <input name="access_key" type="hidden" value="bb4ce643-528d-4473-a29c-5dfeda749081">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Name -->
+                    <div class="flex flex-col gap-2">
+                        <label class="text-slate-900 dark:text-white text-sm font-bold">Uw naam</label>
+                        <input class="form-input w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-primary focus:ring-primary" name="name"
+                               placeholder="Bijv. Jan Jansen"
+                               required type="text"/>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="flex flex-col gap-2">
+                        <label class="text-slate-900 dark:text-white text-sm font-bold">Email of Telefoonnummer</label>
+                        <input class="form-input w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-primary focus:ring-primary" name="contact"
+                               placeholder="Bijv. jan@example.com"
+                               required type="text"/>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Device -->
+                    <div class="flex flex-col gap-2">
+                        <label class="text-slate-900 dark:text-white text-sm font-bold">Apparaat & Model</label>
+                        <select class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-primary" name="device"
+                                required>
+                            <option value="">Selecteer apparaat...</option>
+                            <option>iPhone 14 / 14 Pro</option>
+                            <option>iPhone 13 / 13 Pro</option>
+                            <option>Samsung Galaxy S23</option>
+                            <option>MacBook Air / Pro</option>
+                            <option>Andere...</option>
+                        </select>
+                    </div>
+
+                    <!-- Service -->
+                    <div class="flex flex-col gap-2">
+                        <label class="text-slate-900 dark:text-white text-sm font-bold">Type Reparatie</label>
+                        <select class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-primary" name="service"
+                                required>
+                            <option value="">Selecteer probleem...</option>
+                            <option>Scherm vervangen</option>
+                            <option>Batterij vervangen</option>
+                            <option>Waterschade</option>
+                            <option>Anders (beschrijf hieronder)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Message -->
+                <div class="flex flex-col gap-2">
+                    <label class="text-slate-900 dark:text-white text-sm font-bold">Extra informatie</label>
+                    <textarea class="form-textarea w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-primary focus:ring-primary h-32 resize-none" name="message"
+                              placeholder="Beschrijf het probleem..."
+                              required></textarea>
+                </div>
+
+                <!-- Submit -->
+                <button class="w-full bg-primary hover:bg-blue-600 text-white font-bold text-lg py-4 rounded-lg transition-colors shadow-md"
+                        type="submit">
+                    Verstuur aanvraag
+                </button>
+
+                <p class="text-center text-sm text-green-600 hidden mt-3" id="appointmentMessage"></p>
+            </form>
+
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-[#101922] border-t border-slate-200 dark:border-slate-800 pt-12 pb-8 px-4 md:px-10 lg:px-40">
+    <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="col-span-1 md:col-span-1">
+            <div class="flex items-center gap-2 text-slate-900 dark:text-white mb-4">
+                <span class="material-symbols-outlined text-primary text-2xl">build_circle</span>
+                <h2 class="text-lg font-bold">TechFix</h2>
+            </div>
+            <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                Uw betrouwbare partner voor smartphone, tablet en laptop reparaties. Snel, vakkundig en betaalbaar.
+            </p>
+        </div>
+        <div>
+            <h3 class="text-slate-900 dark:text-white font-bold mb-4">Diensten</h3>
+            <ul class="flex flex-col gap-2 text-sm text-slate-500 dark:text-slate-400">
+                <li><a class="hover:text-primary" href="#">iPhone Reparatie</a></li>
+                <li><a class="hover:text-primary" href="#">Samsung Reparatie</a></li>
+                <li><a class="hover:text-primary" href="#">MacBook Reparatie</a></li>
+                <li><a class="hover:text-primary" href="#">Waterschade</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-slate-900 dark:text-white font-bold mb-4">Winkel</h3>
+            <ul class="flex flex-col gap-2 text-sm text-slate-500 dark:text-slate-400">
+                <li><a class="hover:text-primary" href="#">Refurbished iPhones</a></li>
+                <li><a class="hover:text-primary" href="#">Hoesjes &amp; Screenprotectors</a></li>
+                <li><a class="hover:text-primary" href="#">Opladers</a></li>
+                <li><a class="hover:text-primary" href="#">Zakelijk</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-slate-900 dark:text-white font-bold mb-4">Contact</h3>
+            <ul class="flex flex-col gap-3 text-sm text-slate-500 dark:text-slate-400">
+                <li class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-lg">location_on</span>
+                    Breestraat 71, 1941 EE Beverwijk
+                </li>
+                <li class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-lg">call</span>
+                    0251 785 862
+                </li>
+                <li class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-lg">mail</span>
+                    info@Matacomputers.nl
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-[1200px] mx-auto border-t border-slate-200 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-slate-400 text-sm">© 2025 TechFix Reparatieservice. Alle rechten voorbehouden.</p>
+        <div class="flex gap-6">
+            <a class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-sm" href="#">Privacy</a>
+            <a class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-sm" href="#">Algemene
+                Voorwaarden</a>
+        </div>
+    </div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        // --- Scroll buttons ---
+        const scrollToSection = (selector) => {
+            const element = document.querySelector(selector);
+            if (element) element.scrollIntoView({behavior: "smooth", block: "start"});
+        };
+        document.querySelectorAll(".scroll-afspraak").forEach(btn => btn.addEventListener("click", () => scrollToSection("#afspraak")));
+        document.querySelectorAll(".scroll-prijzen").forEach(btn => btn.addEventListener("click", () => scrollToSection("#prijzen")));
+
+        // --- Repair dropdown ---
+        const openDropdownBtn = document.getElementById("openRepairDropdown");
+        const dropdown = document.getElementById("repairDropdown");
+        const brandSelect = document.getElementById("brandSelect");
+        const modelSelect = document.getElementById("modelSelect");
+        const colorSelect = document.getElementById("colorSelect");
+        const pricesDiv = document.getElementById("repairPrices");
+        const pricesList = document.getElementById("pricesList");
+
+        const models = {
+            apple: ["iPhone 12", "iPhone 13", "iPhone 14", "iPhone 15"],
+            samsung: ["Galaxy S21", "Galaxy S22", "Galaxy S23"],
+            google: ["Pixel 6", "Pixel 7", "Pixel 8"]
+        };
+
+        const colors = {
+            "iPhone 12": ["Zwart", "Wit", "Blauw", "Rood"],
+            "iPhone 13": ["Zwart", "Wit", "Roze", "Groen"],
+            "iPhone 14": ["Middernacht", "Sterrenlicht", "Paars"],
+            "iPhone 15": ["Zwart", "Blauw", "Groen", "Roze"],
+            "Galaxy S21": ["Grey", "Violet", "White"],
+            "Galaxy S22": ["Black", "Rose Gold", "White"],
+            "Galaxy S23": ["Black", "Green", "Cream"],
+            "Pixel 6": ["Stormy Black", "Kinda Coral"],
+            "Pixel 7": ["Snow", "Obsidian"],
+            "Pixel 8": ["Hazel", "Rose"]
+        };
+
+        const prices = {
+            "iPhone 12": {"Schermvervanging": "€59", "Batterij": "€39", "Waterschade": "Op aanvraag"},
+            "iPhone 13": {"Schermvervanging": "€69", "Batterij": "€45", "Waterschade": "Op aanvraag"},
+            "iPhone 14": {"Schermvervanging": "€79", "Batterij": "€49", "Waterschade": "Op aanvraag"},
+            "iPhone 15": {"Schermvervanging": "€89", "Batterij": "€55", "Waterschade": "Op aanvraag"},
+            "Galaxy S21": {"Schermvervanging": "€65", "Batterij": "€40", "Waterschade": "Op aanvraag"},
+            "Galaxy S22": {"Schermvervanging": "€75", "Batterij": "€45", "Waterschade": "Op aanvraag"},
+            "Galaxy S23": {"Schermvervanging": "€85", "Batterij": "€50", "Waterschade": "Op aanvraag"},
+            "Pixel 6": {"Schermvervanging": "€60", "Batterij": "€42", "Waterschade": "Op aanvraag"},
+            "Pixel 7": {"Schermvervanging": "€70", "Batterij": "€48", "Waterschade": "Op aanvraag"},
+            "Pixel 8": {"Schermvervanging": "€80", "Batterij": "€52", "Waterschade": "Op aanvraag"}
+        };
+
+        // Toggle dropdown visibility
+        let isDropdownOpen = false;
+        openDropdownBtn.addEventListener("click", () => {
+            if (isDropdownOpen) {
+                dropdown.style.display = "none";
+                openDropdownBtn.innerHTML = `Bekijk alle reparaties en prijzen <span class="material-symbols-outlined text-sm">arrow_forward</span>`;
+            } else {
+                dropdown.style.display = "block";
+                openDropdownBtn.innerHTML = `Verberg reparaties <span class="material-symbols-outlined text-sm">arrow_upward</span>`;
+                // Smooth scroll to dropdown
+                setTimeout(() => {
+                    dropdown.scrollIntoView({behavior: "smooth", block: "nearest"});
+                }, 100);
+            }
+            isDropdownOpen = !isDropdownOpen;
+        });
+
+        // Brand → Model
+        brandSelect.addEventListener("change", () => {
+            const brand = brandSelect.value;
+
+            modelSelect.innerHTML = "<option value=''>Selecteer model...</option>";
+            colorSelect.innerHTML = "<option value=''>Selecteer eerst een model...</option>";
+            pricesList.innerHTML = "";
+            pricesDiv.classList.add("hidden");
+
+            modelSelect.disabled = false;
+            colorSelect.disabled = true;
+
+            if (models[brand]) {
+                models[brand].forEach(model => {
+                    modelSelect.innerHTML += `<option value='${model}'>${model}</option>`;
+                });
+            }
+        });
+
+        // Model → Color + Show prices
+        modelSelect.addEventListener("change", () => {
+            const model = modelSelect.value;
+
+            colorSelect.innerHTML = "<option value=''>Selecteer kleur...</option>";
+            colorSelect.disabled = false;
+
+            // Update prices
+            pricesList.innerHTML = "";
+            if (prices[model]) {
+                for (const [service, price] of Object.entries(prices[model])) {
+                    const li = document.createElement("li");
+                    li.className = "flex justify-between items-center py-2 border-b border-slate-200 dark:border-slate-700 last:border-b-0";
+                    li.innerHTML = `
+                        <span class="text-slate-700 dark:text-slate-300 font-medium">${service}</span>
+                        <span class="text-primary font-bold">${price}</span>
+                    `;
+                    pricesList.appendChild(li);
+                }
+                pricesDiv.classList.remove("hidden");
+            } else {
+                pricesDiv.classList.add("hidden");
+            }
+
+            if (colors[model]) {
+                colors[model].forEach(color => {
+                    colorSelect.innerHTML += `<option value='${color}'>${color}</option>`;
+                });
+            }
+        });
+
+    });
+</script>
+
+
+</body>
+</html>
