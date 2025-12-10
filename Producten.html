@@ -60,8 +60,20 @@
                         </h2>
                     </a>
                 </a>
-                <div class="hidden lg:flex items-center gap-6 xl:gap-9">
-                    <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="index.html">home</a>
+                <div class="hidden lg:flex items-center gap-6 xl:gap-9 relative">
+                    <div class="group relative">
+                        <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
+                           href="Producten.html">
+                            Producten
+                        </a>
+                        <!-- Dropdown items -->
+                        <div class="absolute left-0 mt-2 w-40 bg-white dark:bg-gray-800 shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 z-50">
+                            <a href="Product1.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md">Telefoons</a>
+                            <a href="Product2.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md">Tablets & Ipads</a>
+                            <a href="Product3.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md">Laptops</a>
+                            <a href="Product3.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md">Accessoires</a>
+                        </div>
+                    </div>
                     <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="Reparaties.html">Reparaties</a>
                     <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="Contact.html">Over ons</a>
                 </div>
@@ -467,12 +479,12 @@
                 <h2 class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">Is je huidige telefoon stuk?</h2>
                 <p class="text-slate-600 dark:text-slate-300 text-lg mb-6">Wij repareren schermen, batterijen en meer. Vaak al klaar terwijl je wacht!</p>
                 <div class="flex gap-4">
-                    <button class="bg-primary text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-600 transition-colors shadow-lg shadow-primary/30">
+                    <a href="Reparaties.html#afspraak" class="bg-primary text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-600 transition-colors shadow-lg shadow-primary/30 text-center">
                         Reparatie aanmelden
-                    </button>
-                    <button class="text-primary font-bold px-6 py-3 rounded-lg hover:bg-primary/10 transition-colors">
+                    </a>
+                    <a href="Reparaties.html#prijzen" class="text-primary font-bold px-6 py-3 rounded-lg hover:bg-primary/10 transition-colors text-center">
                         Bekijk prijzen
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="hidden md:block">

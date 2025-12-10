@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
+<html class="light" lang="en">
+<head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Homepage Mata Computers</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Filled" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+          rel="stylesheet"/>
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -44,24 +48,44 @@
                         <div class="size-6 text-primary">
                             <span class="material-symbols-outlined !text-3xl">smartphone</span>
                         </div>
-                        <h2 class="text-[#0d141b] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Mata Computers</h2>
+                        <h2 class="text-[#0d141b] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">
+                            Mata Computers</h2>
                     </div>
                     <label class="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
                         <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
                             <div class="text-[#4c739a] flex border-none bg-[#e7edf3] dark:bg-[#2a3b4d] items-center justify-center pl-4 rounded-l-lg border-r-0">
                                 <span class="material-symbols-outlined" style="font-size: 20px;">search</span>
                             </div>
-                            <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141b] dark:text-white focus:outline-0 focus:ring-0 border-none bg-[#e7edf3] dark:bg-[#2a3b4d] focus:border-none h-full placeholder:text-[#4c739a] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Zoeken..." value=""/>
+                            <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141b] dark:text-white focus:outline-0 focus:ring-0 border-none bg-[#e7edf3] dark:bg-[#2a3b4d] focus:border-none h-full placeholder:text-[#4c739a] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                                   placeholder="Zoeken..." value=""/>
                         </div>
                     </label>
                 </div>
                 <div class="flex flex-1 justify-end gap-4 lg:gap-8">
-                    <div class="hidden lg:flex items-center gap-6 xl:gap-9">
-                        <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="Producten.html">Telefoons</a>
-                        <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="Producten.html">Laptops</a>
-                        <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="Producten.html">Accessoires</a>
-                        <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="Reparaties.html">Reparaties</a>
-                        <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="Contact.html">Over ons</a>
+                    <div class="hidden lg:flex items-center gap-6 xl:gap-9 relative">
+                        <!-- Dropdown Menu -->
+                        <div class="group relative">
+                            <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
+                               href="Producten.html">
+                                Producten
+                            </a>
+                            <!-- Dropdown items -->
+                            <div class="absolute left-0 mt-2 w-40 bg-white dark:bg-gray-800 shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
+                                <a class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md"
+                                   href="Product1.html">Telefoons</a>
+                                <a class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md"
+                                   href="Product2.html">Tablets
+                                    & Ipads</a>
+                                <a class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md"
+                                   href="Product3.html">Laptops</a>
+                                <a class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md"
+                                   href="Product3.html">Accessoires</a>
+                            </div>
+                        </div>
+                        <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
+                           href="Reparaties.html">Reparaties</a>
+                        <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
+                           href="Contact.html">Over ons</a>
                     </div>
                     <div class="flex gap-2">
                         <a href="Reparaties.html#afspraak">
@@ -92,7 +116,8 @@
                                 De Nieuwste Tech,<br/>De Beste Service
                             </h1>
                             <h2 class="text-[#0d141b] dark:text-gray-300 text-lg font-normal leading-relaxed max-w-xl">
-                                Ontdek ons uitgebreide aanbod smartphones en laptops, of kom langs voor een snelle reparatie.
+                                Ontdek ons uitgebreide aanbod smartphones en laptops, of kom langs voor een snelle
+                                reparatie.
                             </h2>
                         </div>
                         <div class="flex flex-wrap gap-3">
@@ -119,7 +144,9 @@
                         </div>
                     </div>
                     <div class="w-full lg:w-1/2 order-1 lg:order-2">
-                        <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-2xl shadow-xl" data-alt="Image of modern smartphones and repair tools on a clean desk" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVrsBcbEmLhL4sAbIzFPAZsAQ1oUufRcEHBBpl7NG0EACH7TogDvwKku-lBC1Ddn4ndAHWrp7hKaUSYsSumyJzLUA9vnXxN3v7BUB0jK5wukw1KMAzWkTWbrPC0UVHaHaYpB31YUX0vHVcmeVFWVCTOztkBmZv2DNq2qkym-Tzp_sefdu6ltotmlrDPE5ff-ja3eXteEP0bPdPf18zJhIk8uuKL0A519xYt8qQrQZQepYiTaNffJQvHqjyJBn1oOB2XizrrYgxxDX6");'></div>
+                        <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover rounded-2xl shadow-xl"
+                             data-alt="Image of modern smartphones and repair tools on a clean desk"
+                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVrsBcbEmLhL4sAbIzFPAZsAQ1oUufRcEHBBpl7NG0EACH7TogDvwKku-lBC1Ddn4ndAHWrp7hKaUSYsSumyJzLUA9vnXxN3v7BUB0jK5wukw1KMAzWkTWbrPC0UVHaHaYpB31YUX0vHVcmeVFWVCTOztkBmZv2DNq2qkym-Tzp_sefdu6ltotmlrDPE5ff-ja3eXteEP0bPdPf18zJhIk8uuKL0A519xYt8qQrQZQepYiTaNffJQvHqjyJBn1oOB2XizrrYgxxDX6");'></div>
                     </div>
                 </div>
             </div>
@@ -129,49 +156,64 @@
     <div class="w-full bg-background-light dark:bg-background-dark py-12">
         <div class="px-6 md:px-10 max-w-[1440px] mx-auto w-full">
             <div class="flex flex-col max-w-[960px] mx-auto md:max-w-none">
-                <h1 class="text-[#0d141b] dark:text-white tracking-light text-[32px] font-bold leading-tight text-center pb-8">Onze Bestverkochte Producten</h1>
+                <h1 class="text-[#0d141b] dark:text-white tracking-light text-[32px] font-bold leading-tight text-center pb-8">
+                    Onze Bestverkochte Producten</h1>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Product Card 1 -->
                     <div class="flex flex-col gap-4 p-4 rounded-xl bg-white dark:bg-[#1a2632] shadow-sm hover:shadow-md transition-shadow group">
-                        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden relative" data-alt="iPhone 15 Pro Max showing titanium finish" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_Xcf4wIfEzXAwb-m20swVTEVMWGSR-mhesBOItQorfIenqKTauNYL_xaZPHitA2Cy-jLRTtveghkpx_SL8jt4REB88Tw-OiiS3wK1KfJIPBXOtg5x50lz0OorVcCk08LxCqx4OgFI76teVLOPuYEaJobZLa1-Hvwv5DzRWPEMuUWkgy8-Jlc-M2FAH5ozRRAgKk9Iln-S0D-ggkoV475nN9Wvz6uigJSlH25Dhr31YG8ZXWS0UhD_aEa6qfE3gU-YhFWFL2j9--OM");'>
+                        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden relative"
+                             data-alt="iPhone 15 Pro Max showing titanium finish"
+                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_Xcf4wIfEzXAwb-m20swVTEVMWGSR-mhesBOItQorfIenqKTauNYL_xaZPHitA2Cy-jLRTtveghkpx_SL8jt4REB88Tw-OiiS3wK1KfJIPBXOtg5x50lz0OorVcCk08LxCqx4OgFI76teVLOPuYEaJobZLa1-Hvwv5DzRWPEMuUWkgy8-Jlc-M2FAH5ozRRAgKk9Iln-S0D-ggkoV475nN9Wvz6uigJSlH25Dhr31YG8ZXWS0UhD_aEa6qfE3gU-YhFWFL2j9--OM");'>
                             <div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors"></div>
                             <span class="absolute top-2 right-2 bg-green-100 text-green-800 text-xs font-bold px-2 py-1 rounded">NIEUW</span>
                         </div>
                         <div>
                             <div class="flex justify-between items-start">
-                                <p class="text-[#0d141b] dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">iPhone 15 Pro</p>
+                                <p class="text-[#0d141b] dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">
+                                    iPhone 15 Pro</p>
                             </div>
-                            <p class="text-[#4c739a] dark:text-gray-400 text-sm font-normal leading-normal">Vanaf €1.099</p>
-                            <button class="mt-3 w-full py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white font-semibold text-sm transition-colors">
+                            <p class="text-[#4c739a] dark:text-gray-400 text-sm font-normal leading-normal">Vanaf
+                                €1.099</p>
+                            <a class="mt-3 w-full py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white font-semibold text-sm transition-colors text-center inline-block"
+                               href="Producten.html">
                                 Bekijken
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <!-- Product Card 2 -->
                     <div class="flex flex-col gap-4 p-4 rounded-xl bg-white dark:bg-[#1a2632] shadow-sm hover:shadow-md transition-shadow group">
-                        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden relative" data-alt="Samsung Galaxy S24 Ultra in hand" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_GmJgn9cKW53UC9mAQaL7vn-joNVL32Hbms9UUWLTGqsqUt7xEenJtPiUV0EENSM3yCXMBffpTBtRTY4il56eyhcZAiWWa3x8kuGM5Kt5BWuNw2T-8G8q9t55il5BskTgl1lidgNfDZ7gyizNkTWZ8KargpbOYW5UYh0w1J7-QasJSEoJQxqLfOLrkcSxDrV2XnK6LksGSmITN9xOzq0DZe7zUDVCBE6ID-d5MokYfIjOTTrt36xUR_RMHZ8MH2uxgb3lWw-EUtyV");'>
+                        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden relative"
+                             data-alt="Samsung Galaxy S24 Ultra in hand"
+                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_GmJgn9cKW53UC9mAQaL7vn-joNVL32Hbms9UUWLTGqsqUt7xEenJtPiUV0EENSM3yCXMBffpTBtRTY4il56eyhcZAiWWa3x8kuGM5Kt5BWuNw2T-8G8q9t55il5BskTgl1lidgNfDZ7gyizNkTWZ8KargpbOYW5UYh0w1J7-QasJSEoJQxqLfOLrkcSxDrV2XnK6LksGSmITN9xOzq0DZe7zUDVCBE6ID-d5MokYfIjOTTrt36xUR_RMHZ8MH2uxgb3lWw-EUtyV");'>
                             <div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors"></div>
                         </div>
                         <div>
                             <div class="flex justify-between items-start">
-                                <p class="text-[#0d141b] dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">Samsung S24</p>
+                                <p class="text-[#0d141b] dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">
+                                    Samsung S24</p>
                             </div>
-                            <p class="text-[#4c739a] dark:text-gray-400 text-sm font-normal leading-normal">Vanaf €899</p>
-                            <button class="mt-3 w-full py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white font-semibold text-sm transition-colors">
+                            <p class="text-[#4c739a] dark:text-gray-400 text-sm font-normal leading-normal">Vanaf
+                                €899</p>
+                            <a class="mt-3 w-full py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white font-semibold text-sm transition-colors text-center inline-block"
+                               href="Producten.html">
                                 Bekijken
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <!-- Product Card 3 -->
                     <div class="flex flex-col gap-4 p-4 rounded-xl bg-white dark:bg-[#1a2632] shadow-sm hover:shadow-md transition-shadow group">
-                        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden relative" data-alt="MacBook Air M2 on a minimalist desk" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAPTGdQQihgRKkPEW-cvXVvHNOKqatAbEL12OvUmEfO4tC-vTT8PO8uYngQRISDi3BrwBf0_myfLSgZ-TimMyA6KVLbgdLnnEm1GLMx4CPn8r1t3neLbJXJQwGawPFldvWboo3UE-2rmXKqykbKNMtTjeFO2n64c8zSakRbyl3AEfGPNhSwbjHFJ2eAhNiyLHrWv_AJis4T_xzxLffUZxZYwuF_pw8nbtMcQ4C-1RrnpRR8YEu9moe4P2yIIqdDRJ0IE9SJIs9j5s-v");'>
+                        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden relative"
+                             data-alt="MacBook Air M2 on a minimalist desk"
+                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAPTGdQQihgRKkPEW-cvXVvHNOKqatAbEL12OvUmEfO4tC-vTT8PO8uYngQRISDi3BrwBf0_myfLSgZ-TimMyA6KVLbgdLnnEm1GLMx4CPn8r1t3neLbJXJQwGawPFldvWboo3UE-2rmXKqykbKNMtTjeFO2n64c8zSakRbyl3AEfGPNhSwbjHFJ2eAhNiyLHrWv_AJis4T_xzxLffUZxZYwuF_pw8nbtMcQ4C-1RrnpRR8YEu9moe4P2yIIqdDRJ0IE9SJIs9j5s-v");'>
                             <div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors"></div>
                         </div>
                         <div>
                             <div class="flex justify-between items-start">
-                                <p class="text-[#0d141b] dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">MacBook Air</p>
+                                <p class="text-[#0d141b] dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">
+                                    MacBook Air</p>
                             </div>
-                            <p class="text-[#4c739a] dark:text-gray-400 text-sm font-normal leading-normal">Vanaf €1.099</p>
+                            <p class="text-[#4c739a] dark:text-gray-400 text-sm font-normal leading-normal">Vanaf
+                                €1.099</p>
                             <button class="mt-3 w-full py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white font-semibold text-sm transition-colors">
                                 Bekijken
                             </button>
@@ -179,15 +221,19 @@
                     </div>
                     <!-- Product Card 4 -->
                     <div class="flex flex-col gap-4 p-4 rounded-xl bg-white dark:bg-[#1a2632] shadow-sm hover:shadow-md transition-shadow group">
-                        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden relative" data-alt="Collection of colorful phone cases and charging cables" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAaZd_9-sNc1fbCtj7Sq1LPi_p8HJRFucqv-0v5TAGwt0Se0XRBR_pDXj1LA1IHqZb7hT_kqW5r_9Yo1YtGvcFAxvUn4gpRDYwX7CzyhXswY_6ybOV9BfCjse-_3vz8flDXXyTDZ13jVQivnxRizGiK0r-dEqVBznPGcwekZTORH2TxGDUcBJrL9P1WutgDoGk6w-Hfc2rIYhpT6yvYtTme8AbO4ENZdGW_4lMnkAqvf9utKJLp7z0pZCYSBZVHf6XJSDGuX2arvJLd");'>
+                        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden relative"
+                             data-alt="Collection of colorful phone cases and charging cables"
+                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAaZd_9-sNc1fbCtj7Sq1LPi_p8HJRFucqv-0v5TAGwt0Se0XRBR_pDXj1LA1IHqZb7hT_kqW5r_9Yo1YtGvcFAxvUn4gpRDYwX7CzyhXswY_6ybOV9BfCjse-_3vz8flDXXyTDZ13jVQivnxRizGiK0r-dEqVBznPGcwekZTORH2TxGDUcBJrL9P1WutgDoGk6w-Hfc2rIYhpT6yvYtTme8AbO4ENZdGW_4lMnkAqvf9utKJLp7z0pZCYSBZVHf6XJSDGuX2arvJLd");'>
                             <div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors"></div>
                             <span class="absolute top-2 right-2 bg-red-100 text-red-800 text-xs font-bold px-2 py-1 rounded">SALE</span>
                         </div>
                         <div>
                             <div class="flex justify-between items-start">
-                                <p class="text-[#0d141b] dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">Accessoires</p>
+                                <p class="text-[#0d141b] dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">
+                                    Accessoires</p>
                             </div>
-                            <p class="text-[#4c739a] dark:text-gray-400 text-sm font-normal leading-normal">Vanaf €19,99</p>
+                            <p class="text-[#4c739a] dark:text-gray-400 text-sm font-normal leading-normal">Vanaf
+                                €19,99</p>
                             <button class="mt-3 w-full py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white font-semibold text-sm transition-colors">
                                 Bekijken
                             </button>
@@ -207,7 +253,8 @@
                             Onze Reparatieservice
                         </h1>
                         <p class="text-[#4c739a] dark:text-gray-300 text-lg font-normal leading-relaxed">
-                            Kapot scherm? Zwakke batterij? Wij repareren uw apparaat snel, betrouwbaar en met garantie. Klaar terwijl u wacht.
+                            Kapot scherm? Zwakke batterij? Wij repareren uw apparaat snel, betrouwbaar en met garantie.
+                            Klaar terwijl u wacht.
                         </p>
                     </div>
                     <button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors shrink-0">
@@ -223,7 +270,8 @@
                         <div class="flex flex-col gap-2">
                             <h2 class="text-[#0d141b] dark:text-white text-xl font-bold leading-tight">Diagnose</h2>
                             <p class="text-[#4c739a] dark:text-gray-400 text-base font-normal leading-normal">
-                                Weet u niet wat er mis is? Wij voeren een gratis en vrijblijvende diagnose uit om het probleem te vinden.
+                                Weet u niet wat er mis is? Wij voeren een gratis en vrijblijvende diagnose uit om het
+                                probleem te vinden.
                             </p>
                         </div>
                     </div>
@@ -235,7 +283,8 @@
                         <div class="flex flex-col gap-2">
                             <h2 class="text-[#0d141b] dark:text-white text-xl font-bold leading-tight">Reparatie</h2>
                             <p class="text-[#4c739a] dark:text-gray-400 text-base font-normal leading-normal">
-                                Onze gecertificeerde experts repareren uw toestel met originele onderdelen. Vaak al binnen 30 minuten klaar.
+                                Onze gecertificeerde experts repareren uw toestel met originele onderdelen. Vaak al
+                                binnen 30 minuten klaar.
                             </p>
                         </div>
                     </div>
@@ -247,7 +296,8 @@
                         <div class="flex flex-col gap-2">
                             <h2 class="text-[#0d141b] dark:text-white text-xl font-bold leading-tight">Garantie</h2>
                             <p class="text-[#4c739a] dark:text-gray-400 text-base font-normal leading-normal">
-                                Wij staan achter onze kwaliteit. U krijgt standaard 12 maanden garantie op de reparatie en de onderdelen.
+                                Wij staan achter onze kwaliteit. U krijgt standaard 12 maanden garantie op de reparatie
+                                en de onderdelen.
                             </p>
                         </div>
                     </div>
@@ -267,12 +317,14 @@
                         <h2 class="text-lg font-bold">Telefoonwinkel</h2>
                     </div>
                     <p class="text-[#4c739a] dark:text-gray-400 text-sm">
-                        Uw specialist in smartphones, laptops en reparaties. Bezoek onze winkel of bestel eenvoudig online.
+                        Uw specialist in smartphones, laptops en reparaties. Bezoek onze winkel of bestel eenvoudig
+                        online.
                     </p>
                     <div class="flex gap-4 text-[#4c739a] dark:text-gray-400">
                         <!-- Social icons placeholders -->
                         <a class="hover:text-primary" href="#"><span class="material-symbols-outlined">public</span></a>
-                        <a class="hover:text-primary" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+                        <a class="hover:text-primary" href="#"><span
+                                class="material-symbols-outlined">alternate_email</span></a>
                     </div>
                 </div>
                 <div class="flex flex-col gap-4">
@@ -296,8 +348,10 @@
                 <div class="flex flex-col gap-4">
                     <h3 class="text-[#0d141b] dark:text-white font-bold">Openingstijden</h3>
                     <div class="flex flex-col gap-2 text-[#4c739a] dark:text-gray-400 text-sm">
-                        <div class="flex justify-between max-w-[200px]"><span>Ma:</span> <span>12:00 - 17:00</span></div>
-                        <div class="flex justify-between max-w-[200px]"><span>Di - Za:</span> <span>10:00 - 17:00</span></div>
+                        <div class="flex justify-between max-w-[200px]"><span>Ma:</span> <span>12:00 - 17:00</span>
+                        </div>
+                        <div class="flex justify-between max-w-[200px]"><span>Di - Za:</span> <span>10:00 - 17:00</span>
+                        </div>
                         <div class="flex justify-between max-w-[200px]"><span>Zo:</span> <span>Gesloten</span></div>
                     </div>
                 </div>
@@ -312,4 +366,5 @@
         </div>
     </footer>
 </div>
-</body></html>
+</body>
+</html>

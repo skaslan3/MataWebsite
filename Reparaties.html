@@ -47,13 +47,23 @@
                     </h2>
                 </a>
             </div>
-            <div class="hidden lg:flex items-center gap-6 xl:gap-9">
-                <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
-                   href="Producten.html">Telefoons</a>
-                <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
-                   href="Producten.html">Laptops</a>
-                <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
-                   href="Producten.html">Accessoires</a>
+            <div class="hidden lg:flex items-center gap-6 xl:gap-9 relative">
+                <div class="group relative">
+                    <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
+                       href="Producten.html">Producten</a>
+                    <!-- Dropdown items -->
+                    <div class="absolute left-0 mt-2 w-40 bg-white dark:bg-gray-800 shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 z-50">
+                        <a class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md"
+                           href="Product1.html">Telefoons</a>
+                        <a class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md"
+                           href="Product2.html">Tablets
+                            & Ipads</a>
+                        <a class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md"
+                           href="Product3.html">Laptops</a>
+                        <a class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md"
+                           href="Product3.html">Accessoires</a>
+                    </div>
+                </div>
                 <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
                    href="Reparaties.html">Reparaties</a>
                 <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
@@ -70,9 +80,6 @@
                            placeholder="Zoek apparaat" value=""/>
                 </div>
             </label>
-            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-blue-600 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
-                <span class="truncate">Maak afspraak</span>
-            </button>
         </div>
     </header>
 </div>
@@ -258,23 +265,26 @@
                     </div>
                 </div>
                 <div class="flex justify-center mt-4">
-                    <button id="openRepairDropdown"
-                            class="text-primary font-bold text-sm hover:underline flex items-center gap-1 cursor-pointer">
+                    <button class="text-primary font-bold text-sm hover:underline flex items-center gap-1 cursor-pointer"
+                            id="openRepairDropdown">
                         Bekijk alle reparaties en prijzen
                         <span class="material-symbols-outlined text-sm">arrow_forward</span>
                     </button>
                 </div>
 
                 <!-- Dropdown container (separate from the cards) -->
-                <div id="repairDropdown" class="max-w-[600px] mx-auto mt-6 border border-slate-200 dark:border-slate-700 bg-white dark:bg-[#1A2633] rounded-xl shadow-md transition-all duration-500 ease-in-out" style="display: none;">
+                <div class="max-w-[600px] mx-auto mt-6 border border-slate-200 dark:border-slate-700 bg-white dark:bg-[#1A2633] rounded-xl shadow-md transition-all duration-500 ease-in-out"
+                     id="repairDropdown"
+                     style="display: none;">
                     <div class="p-6">
-                        <h3 class="text-slate-900 dark:text-white text-lg font-bold mb-6 text-center">Selecteer uw apparaat</h3>
+                        <h3 class="text-slate-900 dark:text-white text-lg font-bold mb-6 text-center">Selecteer uw
+                            apparaat</h3>
 
                         <!-- BRAND -->
                         <div class="flex flex-col gap-2 mb-4">
                             <label class="text-slate-700 dark:text-slate-300 text-sm font-bold">Merk</label>
-                            <select id="brandSelect"
-                                    class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#16202a] px-4 py-3 text-slate-900 dark:text-white">
+                            <select class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#16202a] px-4 py-3 text-slate-900 dark:text-white"
+                                    id="brandSelect">
                                 <option value="">Selecteer merk...</option>
                                 <option value="apple">Apple</option>
                                 <option value="samsung">Samsung</option>
@@ -285,8 +295,8 @@
                         <!-- MODEL -->
                         <div class="flex flex-col gap-2 mb-4">
                             <label class="text-slate-700 dark:text-slate-300 text-sm font-bold">Model</label>
-                            <select id="modelSelect" disabled
-                                    class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#16202a] px-4 py-3 text-slate-900 dark:text-white disabled:opacity-50 disabled:cursor-not-allowed">
+                            <select class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#16202a] px-4 py-3 text-slate-900 dark:text-white disabled:opacity-50 disabled:cursor-not-allowed" disabled
+                                    id="modelSelect">
                                 <option value="">Selecteer eerst een merk...</option>
                             </select>
                         </div>
@@ -294,14 +304,15 @@
                         <!-- COLOR -->
                         <div class="flex flex-col gap-2 mb-4">
                             <label class="text-slate-700 dark:text-slate-300 text-sm font-bold">Kleur</label>
-                            <select id="colorSelect" disabled
-                                    class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#16202a] px-4 py-3 text-slate-900 dark:text-white disabled:opacity-50 disabled:cursor-not-allowed">
+                            <select class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#16202a] px-4 py-3 text-slate-900 dark:text-white disabled:opacity-50 disabled:cursor-not-allowed" disabled
+                                    id="colorSelect">
                                 <option value="">Selecteer eerst een model...</option>
                             </select>
                         </div>
 
                         <!-- Prices Section -->
-                        <div id="repairPrices" class="mt-6 p-4 bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hidden">
+                        <div class="mt-6 p-4 bg-slate-50 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 hidden"
+                             id="repairPrices">
                             <h4 class="font-bold mb-3 text-slate-900 dark:text-white text-base">Reparatie Prijzen:</h4>
                             <ul class="space-y-2" id="pricesList"></ul>
                         </div>
@@ -329,7 +340,8 @@
                     <!-- Name -->
                     <div class="flex flex-col gap-2">
                         <label class="text-slate-900 dark:text-white text-sm font-bold">Uw naam</label>
-                        <input class="form-input w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-primary focus:ring-primary" name="name"
+                        <input class="form-input w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-primary focus:ring-primary"
+                               name="name"
                                placeholder="Bijv. Jan Jansen"
                                required type="text"/>
                     </div>
@@ -337,7 +349,8 @@
                     <!-- Contact -->
                     <div class="flex flex-col gap-2">
                         <label class="text-slate-900 dark:text-white text-sm font-bold">Email of Telefoonnummer</label>
-                        <input class="form-input w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-primary focus:ring-primary" name="contact"
+                        <input class="form-input w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-primary focus:ring-primary"
+                               name="contact"
                                placeholder="Bijv. jan@example.com"
                                required type="text"/>
                     </div>
@@ -347,7 +360,8 @@
                     <!-- Device -->
                     <div class="flex flex-col gap-2">
                         <label class="text-slate-900 dark:text-white text-sm font-bold">Apparaat & Model</label>
-                        <select class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-primary" name="device"
+                        <select class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-primary"
+                                name="device"
                                 required>
                             <option value="">Selecteer apparaat...</option>
                             <option>iPhone 14 / 14 Pro</option>
@@ -361,7 +375,8 @@
                     <!-- Service -->
                     <div class="flex flex-col gap-2">
                         <label class="text-slate-900 dark:text-white text-sm font-bold">Type Reparatie</label>
-                        <select class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-primary" name="service"
+                        <select class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-primary"
+                                name="service"
                                 required>
                             <option value="">Selecteer probleem...</option>
                             <option>Scherm vervangen</option>
@@ -375,9 +390,11 @@
                 <!-- Message -->
                 <div class="flex flex-col gap-2">
                     <label class="text-slate-900 dark:text-white text-sm font-bold">Extra informatie</label>
-                    <textarea class="form-textarea w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-primary focus:ring-primary h-32 resize-none" name="message"
-                              placeholder="Beschrijf het probleem..."
-                              required></textarea>
+                    <textarea
+                            class="form-textarea w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#1A2633] px-4 py-3 text-slate-900 dark:text-white placeholder:text-slate-400 focus:border-primary focus:ring-primary h-32 resize-none"
+                            name="message"
+                            placeholder="Beschrijf het probleem..."
+                            required></textarea>
                 </div>
 
                 <!-- Submit -->
@@ -457,12 +474,31 @@
             const element = document.querySelector(selector);
             if (element) element.scrollIntoView({behavior: "smooth", block: "start"});
         };
+
+            // Check for hash in URL on load and scroll smoothly
+            if (window.location.hash) {
+                const targetId = window.location.hash;
+                const targetElement = document.querySelector(targetId);
+
+                // clear hash temporarily to prevent instant jump by browser
+                history.replaceState(null, null, ' ');
+
+                if (targetElement) {
+                    // Small delay to ensure render and then scroll
+                    setTimeout(() => {
+                         targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                         // Restore hash to URL without jumping
+                         history.replaceState(null, null, targetId);
+                    }, 100);
+                }
+            }
+
         document.querySelectorAll(".scroll-afspraak").forEach(btn => btn.addEventListener("click", () => scrollToSection("#afspraak")));
         document.querySelectorAll(".scroll-prijzen").forEach(btn => btn.addEventListener("click", () => scrollToSection("#prijzen")));
 
-        // --- Repair dropdown ---
-        const openDropdownBtn = document.getElementById("openRepairDropdown");
-        const dropdown = document.getElementById("repairDropdown");
+            // --- Repair dropdown ---
+            const openDropdownBtn = document.getElementById("openRepairDropdown");
+            const dropdown = document.getElementById("repairDropdown");
         const brandSelect = document.getElementById("brandSelect");
         const modelSelect = document.getElementById("modelSelect");
         const colorSelect = document.getElementById("colorSelect");
