@@ -46,56 +46,59 @@
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 flex flex-col min-h-screen">
 <!-- Top Navigation -->
 <header class="sticky top-0 z-50 w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
-    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16 gap-4">
-            <!-- Logo & Nav Links -->
-            <div class="flex items-center gap-8">
-                <a class="flex items-center gap-2 group" href="#">
-                    <div class="size-8 text-primary flex items-center justify-center rounded-lg bg-primary/10">
-                        <span class="material-symbols-outlined text-2xl">devices</span>
-                    </div>
-                    <a href="index.html">
-                        <h2 class="text-[#0d141b] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">
-                            Mata Computers
-                        </h2>
-                    </a>
+    <div class="w-full bg-white dark:bg-[#1a2632] border-b border-[#e7edf3] dark:border-[#2a3b4d]">
+        <div class="px-6 md:px-10 py-3 max-w-[1440px] mx-auto w-full">
+            <header class="flex items-center justify-between whitespace-nowrap">
+
+                <a href="index.html">
+                    <h2 class="text-[#0d141b] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">
+                        Mata Computers
+                    </h2>
                 </a>
-                <div class="hidden lg:flex items-center gap-6 xl:gap-9 relative">
-                    <div class="group relative">
-                        <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
-                           href="Producten.html">
-                            Producten
-                        </a>
-                        <!-- Dropdown items -->
-                        <div class="absolute left-0 mt-2 w-40 bg-white dark:bg-gray-800 shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 z-50">
-                            <a href="Product1.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md">Telefoons</a>
-                            <a href="Product2.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md">Tablets & Ipads</a>
-                            <a href="Product3.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md">Laptops</a>
-                            <a href="Product3.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md">Accessoires</a>
+
+
+                <!-- Navigation + buttons -->
+                <div class="flex items-center gap-4 lg:gap-8">
+
+                    <!-- Nav links -->
+                    <nav class="hidden lg:flex items-center gap-6 xl:gap-9">
+                        <div class="group relative">
+                            <a href="Producten.html" class="text-sm font-medium hover:text-primary">
+                                Producten
+                            </a>
+
+                            <div class="absolute left-0 mt-2 w-40 bg-white dark:bg-gray-800 shadow-lg rounded-md
+                                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                                <a href="Product1.html" class="block px-4 py-2 text-sm hover:bg-primary hover:text-white">
+                                    Telefoons
+                                </a>
+                                <a href="Product2.html" class="block px-4 py-2 text-sm hover:bg-primary hover:text-white">
+                                    Tablets & iPads
+                                </a>
+                                <a href="Product3.html" class="block px-4 py-2 text-sm hover:bg-primary hover:text-white">
+                                    Laptops
+                                </a>
+                                <a href="Product3.html" class="block px-4 py-2 text-sm hover:bg-primary hover:text-white">
+                                    Accessoires
+                                </a>
+                            </div>
                         </div>
+
+                        <a href="Reparaties.html" class="text-sm font-medium hover:text-primary">Reparaties</a>
+                        <a href="Contact.html" class="text-sm font-medium hover:text-primary">Over ons</a>
+                    </nav>
+
+                    <!-- Buttons -->
+                    <div class="flex gap-2">
+                        <a href="Reparaties.html#afspraak" class="hidden md:flex">
+                            <button class="h-10 px-4 bg-primary text-white rounded-lg font-bold text-sm">
+                                Maak Afspraak
+                            </button>
+                        </a>
                     </div>
-                    <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="Reparaties.html">Reparaties</a>
-                    <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="Contact.html">Over ons</a>
+
                 </div>
-            </div>
-            <!-- Search & Utilities -->
-            <div class="flex items-center justify-end gap-4 flex-1">
-                <div class="hidden sm:flex max-w-md w-full relative">
-                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
-                        <span class="material-symbols-outlined text-[20px]">search</span>
-                    </div>
-                    <input class="block w-full rounded-lg border-none bg-slate-100 dark:bg-slate-800 py-2 pl-10 pr-3 text-sm placeholder:text-slate-500 focus:ring-2 focus:ring-primary dark:text-white" placeholder="Zoeken naar telefoons, laptops..." type="text"/>
-                </div>
-                <div class="flex items-center gap-2">
-                    <button class="p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors relative">
-                        <span class="material-symbols-outlined text-[24px]">shopping_cart</span>
-                        <span class="absolute top-1.5 right-1.5 size-2 rounded-full bg-red-500 border border-white dark:border-slate-900"></span>
-                    </button>
-                    <button class="p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
-                        <span class="material-symbols-outlined text-[24px]">account_circle</span>
-                    </button>
-                </div>
-            </div>
+            </header>
         </div>
     </div>
 </header>
