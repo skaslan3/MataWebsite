@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html class="light" lang="en">
 <head>
     <meta charset="utf-8"/>
@@ -31,39 +30,102 @@
             },
         }
     </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-50 antialiased overflow-x-hidden">
+
 <!-- Top Navigation -->
-<div class="relative flex w-full flex-col">
-    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-4 lg:px-10 py-3 bg-white dark:bg-[#1A2633]">
-        <div class="flex items-center gap-4 lg:gap-8">
-                <a href="index.html" class="flex items-center justify-start">
-                    <img src="images/mata-logo.png" alt="Mata Computers Logo" class="h-10 w-auto">
-                </a>
-            <div class="hidden lg:flex items-center gap-6 xl:gap-9 relative">
-                <div class="group relative">
-                    <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
-                       href="Producten.html">Producten</a>
-                    <!-- Dropdown items -->
-                    <div class="absolute left-0 mt-2 w-40 bg-white dark:bg-gray-800 shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 z-50">
-                        <a class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md"
-                           href="Product1.html">Telefoons</a>
-                        <a class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md"
-                           href="Product2.html">Tablets
-                            & Ipads</a>
-                        <a class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md"
-                           href="Product3.html">Laptops</a>
-                        <a class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary hover:text-white transition-colors rounded-md"
-                           href="Product3.html">Accessoires</a>
+<div class="w-full bg-white dark:bg-[#1a2632] border-b border-[#e7edf3] dark:border-[#2a3b4d] sticky top-0 z-50">
+    <div class="px-6 md:px-10 py-3 max-w-[1440px] mx-auto w-full">
+        <header class="flex items-center justify-between whitespace-nowrap">
+
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="images/mata-logo.png" alt="Mata Computers Logo" class="h-12 w-auto">
+            </a>
+
+            <!-- Navigation + buttons -->
+            <div class="flex items-center gap-4 lg:gap-8">
+                <!-- Nav links -->
+                <nav class="hidden lg:flex items-center gap-3">
+                    <div class="group relative">
+                        <a href="Producten.html" class="text-sm font-medium text-[#0d141b] dark:text-gray-200 hover:text-primary dark:hover:text-primary py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors inline-block">
+                            Producten
+                        </a>
+
+                        <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#1a2632] shadow-xl rounded-xl border border-[#e7edf3] dark:border-[#2a3b4d]
+                                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all overflow-hidden">
+                            <a href="Product1.html" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
+                                Telefoons
+                            </a>
+                            <a href="Product2.html" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
+                                Tablets & iPads
+                            </a>
+                            <a href="Product3.html" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
+                                Laptops
+                            </a>
+                            <a href="Product3.html" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors">
+                                Accessoires
+                            </a>
+                        </div>
                     </div>
+
+                    <a href="Reparaties.html" class="text-sm font-medium text-[#0d141b] dark:text-gray-200 hover:text-primary dark:hover:text-primary py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors">Reparaties</a>
+                    <a href="Contact.html" class="text-sm font-medium text-[#0d141b] dark:text-gray-200 hover:text-primary dark:hover:text-primary py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors">Over ons</a>
+                </nav>
+
+                <!-- Buttons -->
+                <div class="flex gap-2">
+                    <a href="Reparaties.html#afspraak" class="hidden md:flex">
+                        <button class="h-10 px-4 bg-primary text-white rounded-lg font-bold text-sm">
+                            Maak Afspraak
+                        </button>
+                    </a>
+
+                    <!-- Dark mode toggle button -->
+                    <button
+                            id="dark-mode-toggle"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                            aria-label="Toggle dark mode"
+                    >
+                        <span class="material-symbols-outlined dark:hidden">dark_mode</span>
+                        <span class="material-symbols-outlined hidden dark:inline">light_mode</span>
+                    </button>
+
+                    <!-- Mobile menu button -->
+                    <button
+                            id="menu-btn"
+                            class="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
                 </div>
-                <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
-                   href="Reparaties.html">Reparaties</a>
-                <a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors"
-                   href="Contact.html">Over ons</a>
+
             </div>
-        </div>
-    </header>
+        </header>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden lg:hidden px-6 pb-6 pt-4 border-t border-[#e7edf3] dark:border-[#2a3b4d] bg-white dark:bg-[#1a2632]">
+        <nav class="flex flex-col gap-2">
+            <a href="Producten.html" class="font-medium text-[#0d141b] dark:text-gray-200 py-3 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
+                Producten
+            </a>
+            <a href="Reparaties.html" class="font-medium text-[#0d141b] dark:text-gray-200 py-3 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
+                Reparaties
+            </a>
+            <a href="Contact.html" class="font-medium text-[#0d141b] dark:text-gray-200 py-3 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
+                Over ons
+            </a>
+            <a href="Reparaties.html#afspraak" class="font-bold text-white bg-primary hover:bg-blue-600 py-3 px-4 rounded-lg transition-colors mt-2 text-center shadow-md">
+                Maak Afspraak
+            </a>
+        </nav>
+    </div>
 </div>
 
 <!-- Hero Section -->
@@ -148,27 +210,27 @@
             <!-- Tabs -->
             <div class="pb-3">
                 <div class="flex border-b border-slate-200 dark:border-slate-700 px-4 justify-center gap-8">
-                    <a class="group flex flex-col items-center justify-center border-b-[3px] border-b-primary px-8 pb-3 pt-2 cursor-pointer transition-all"
-                       href="#">
+                    <a class="device-tab group flex flex-col items-center justify-center border-b-[3px] border-b-primary px-8 pb-3 pt-2 cursor-pointer transition-all"
+                       data-device="smartphone">
                         <div class="text-primary mb-2 transition-transform group-hover:scale-110">
                             <span class="material-symbols-outlined text-3xl">smartphone</span>
                         </div>
                         <p class="text-primary text-sm font-bold leading-normal tracking-[0.015em]">Smartphone</p>
                     </a>
-                    <a class="group flex flex-col items-center justify-center border-b-[3px] border-b-transparent hover:border-b-slate-300 dark:hover:border-b-slate-600 px-8 pb-3 pt-2 cursor-pointer transition-all"
-                       href="#">
-                        <div class="text-slate-400 dark:text-slate-500 mb-2 transition-transform group-hover:scale-110 group-hover:text-slate-600 dark:group-hover:text-slate-300">
+                    <a class="device-tab group flex flex-col items-center justify-center border-b-[3px] border-b-transparent hover:border-b-slate-300 dark:hover:border-b-slate-600 px-8 pb-3 pt-2 cursor-pointer transition-all"
+                       data-device="laptop">
+                        <div class="tab-icon text-slate-400 dark:text-slate-500 mb-2 transition-transform group-hover:scale-110 group-hover:text-slate-600 dark:group-hover:text-slate-300">
                             <span class="material-symbols-outlined text-3xl">laptop_mac</span>
                         </div>
-                        <p class="text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200 text-sm font-bold leading-normal tracking-[0.015em]">
+                        <p class="tab-text text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200 text-sm font-bold leading-normal tracking-[0.015em]">
                             Laptop</p>
                     </a>
-                    <a class="group flex flex-col items-center justify-center border-b-[3px] border-b-transparent hover:border-b-slate-300 dark:hover:border-b-slate-600 px-8 pb-3 pt-2 cursor-pointer transition-all"
-                       href="#">
-                        <div class="text-slate-400 dark:text-slate-500 mb-2 transition-transform group-hover:scale-110 group-hover:text-slate-600 dark:group-hover:text-slate-300">
+                    <a class="device-tab group flex flex-col items-center justify-center border-b-[3px] border-b-transparent hover:border-b-slate-300 dark:hover:border-b-slate-600 px-8 pb-3 pt-2 cursor-pointer transition-all"
+                       data-device="tablet">
+                        <div class="tab-icon text-slate-400 dark:text-slate-500 mb-2 transition-transform group-hover:scale-110 group-hover:text-slate-600 dark:group-hover:text-slate-300">
                             <span class="material-symbols-outlined text-3xl">tablet_mac</span>
                         </div>
-                        <p class="text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200 text-sm font-bold leading-normal tracking-[0.015em]">
+                        <p class="tab-text text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200 text-sm font-bold leading-normal tracking-[0.015em]">
                             Tablet</p>
                     </a>
                 </div>
@@ -182,69 +244,14 @@
         <div class="flex flex-col max-w-[960px] flex-1">
             <div class="flex flex-col gap-10 py-4 @container">
                 <div class="flex flex-col gap-4 text-center">
-                    <h3 class="text-slate-900 dark:text-white text-2xl font-bold">Veelvoorkomende Smartphone
+                    <h3 class="text-slate-900 dark:text-white text-2xl font-bold" id="repairTitle">Veelvoorkomende Smartphone
                         Reparaties</h3>
                     <p class="text-slate-500 dark:text-slate-400 text-base max-w-[600px] mx-auto">
                         Wij gebruiken uitsluitend originele onderdelen of onderdelen van de hoogste kwaliteit.
                     </p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
-                    <!-- Card 1 -->
-                    <div class="flex flex-row gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#1A2633] p-6 hover:shadow-md transition-shadow">
-                        <div class="text-primary shrink-0 bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center">
-                            <span class="material-symbols-outlined">broken_image</span>
-                        </div>
-                        <div class="flex flex-col gap-1 flex-1">
-                            <div class="flex justify-between items-start">
-                                <h2 class="text-slate-900 dark:text-white text-lg font-bold">Schermvervanging</h2>
-                                <span class="inline-block bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold px-2 py-1 rounded">Vanaf €59</span>
-                            </div>
-                            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Gebarsten scherm of strepen in
-                                beeld? Wij zetten er een nieuw scherm op binnen 30 minuten.</p>
-                        </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="flex flex-row gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#1A2633] p-6 hover:shadow-md transition-shadow">
-                        <div class="text-primary shrink-0 bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center">
-                            <span class="material-symbols-outlined">battery_alert</span>
-                        </div>
-                        <div class="flex flex-col gap-1 flex-1">
-                            <div class="flex justify-between items-start">
-                                <h2 class="text-slate-900 dark:text-white text-lg font-bold">Batterij Vervangen</h2>
-                                <span class="inline-block bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold px-2 py-1 rounded">Vanaf €39</span>
-                            </div>
-                            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Gaat uw telefoon snel leeg? Een
-                                nieuwe batterij geeft uw apparaat een tweede leven.</p>
-                        </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="flex flex-row gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#1A2633] p-6 hover:shadow-md transition-shadow">
-                        <div class="text-primary shrink-0 bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center">
-                            <span class="material-symbols-outlined">water_drop</span>
-                        </div>
-                        <div class="flex flex-col gap-1 flex-1">
-                            <div class="flex justify-between items-start">
-                                <h2 class="text-slate-900 dark:text-white text-lg font-bold">Waterschade</h2>
-                                <span class="inline-block bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs font-bold px-2 py-1 rounded">Op aanvraag</span>
-                            </div>
-                            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Telefoon in het water gevallen?
-                                Wij reinigen en herstellen de schade professioneel.</p>
-                        </div>
-                    </div>
-                    <!-- Card 4 -->
-                    <div class="flex flex-row gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#1A2633] p-6 hover:shadow-md transition-shadow">
-                        <div class="text-primary shrink-0 bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center">
-                            <span class="material-symbols-outlined">electrical_services</span>
-                        </div>
-                        <div class="flex flex-col gap-1 flex-1">
-                            <div class="flex justify-between items-start">
-                                <h2 class="text-slate-900 dark:text-white text-lg font-bold">Oplaadpoort</h2>
-                                <span class="inline-block bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold px-2 py-1 rounded">Vanaf €45</span>
-                            </div>
-                            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Laadt uw toestel niet meer goed
-                                op? Wij vervangen uw laadconnector snel.</p>
-                        </div>
-                    </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4" id="repairCards">
+                    <!-- Cards will be dynamically inserted here -->
                 </div>
                 <div class="flex justify-center mt-4">
                     <button class="text-primary font-bold text-sm hover:underline flex items-center gap-1 cursor-pointer"
@@ -268,9 +275,6 @@
                             <select class="form-select w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#16202a] px-4 py-3 text-slate-900 dark:text-white"
                                     id="brandSelect">
                                 <option value="">Selecteer merk...</option>
-                                <option value="apple">Apple</option>
-                                <option value="samsung">Samsung</option>
-                                <option value="google">Google</option>
                             </select>
                         </div>
 
@@ -451,73 +455,264 @@
 <script>
     document.addEventListener("DOMContentLoaded", () => {
 
+        // --- Device type data ---
+        const deviceData = {
+            smartphone: {
+                title: "Veelvoorkomende Smartphone Reparaties",
+                brands: {
+                    apple: ["iPhone 12", "iPhone 13", "iPhone 14", "iPhone 15"],
+                    samsung: ["Galaxy S21", "Galaxy S22", "Galaxy S23"],
+                    google: ["Pixel 6", "Pixel 7", "Pixel 8"]
+                },
+                colors: {
+                    "iPhone 12": ["Zwart", "Wit", "Blauw", "Rood"],
+                    "iPhone 13": ["Zwart", "Wit", "Roze", "Groen"],
+                    "iPhone 14": ["Middernacht", "Sterrenlicht", "Paars"],
+                    "iPhone 15": ["Zwart", "Blauw", "Groen", "Roze"],
+                    "Galaxy S21": ["Grey", "Violet", "White"],
+                    "Galaxy S22": ["Black", "Rose Gold", "White"],
+                    "Galaxy S23": ["Black", "Green", "Cream"],
+                    "Pixel 6": ["Stormy Black", "Kinda Coral"],
+                    "Pixel 7": ["Snow", "Obsidian"],
+                    "Pixel 8": ["Hazel", "Rose"]
+                },
+                prices: {
+                    "iPhone 12": {"Schermvervanging": "€59", "Batterij": "€39", "Waterschade": "Op aanvraag"},
+                    "iPhone 13": {"Schermvervanging": "€69", "Batterij": "€45", "Waterschade": "Op aanvraag"},
+                    "iPhone 14": {"Schermvervanging": "€79", "Batterij": "€49", "Waterschade": "Op aanvraag"},
+                    "iPhone 15": {"Schermvervanging": "€89", "Batterij": "€55", "Waterschade": "Op aanvraag"},
+                    "Galaxy S21": {"Schermvervanging": "€65", "Batterij": "€40", "Waterschade": "Op aanvraag"},
+                    "Galaxy S22": {"Schermvervanging": "€75", "Batterij": "€45", "Waterschade": "Op aanvraag"},
+                    "Galaxy S23": {"Schermvervanging": "€85", "Batterij": "€50", "Waterschade": "Op aanvraag"},
+                    "Pixel 6": {"Schermvervanging": "€60", "Batterij": "€42", "Waterschade": "Op aanvraag"},
+                    "Pixel 7": {"Schermvervanging": "€70", "Batterij": "€48", "Waterschade": "Op aanvraag"},
+                    "Pixel 8": {"Schermvervanging": "€80", "Batterij": "€52", "Waterschade": "Op aanvraag"}
+                },
+                cards: [
+                    {icon: "broken_image", title: "Schermvervanging", price: "Vanaf €59", desc: "Gebarsten scherm of strepen in beeld? Wij zetten er een nieuw scherm op binnen 30 minuten."},
+                    {icon: "battery_alert", title: "Batterij Vervangen", price: "Vanaf €39", desc: "Gaat uw telefoon snel leeg? Een nieuwe batterij geeft uw apparaat een tweede leven."},
+                    {icon: "water_drop", title: "Waterschade", price: "Op aanvraag", desc: "Telefoon in het water gevallen? Wij reinigen en herstellen de schade professioneel.", badge: "slate"},
+                    {icon: "electrical_services", title: "Oplaadpoort", price: "Vanaf €45", desc: "Laadt uw toestel niet meer goed op? Wij vervangen uw laadconnector snel."}
+                ]
+            },
+            laptop: {
+                title: "Veelvoorkomende Laptop Reparaties",
+                brands: {
+                    apple: ["MacBook Air M1", "MacBook Air M2", "MacBook Pro 13\"", "MacBook Pro 14\""],
+                    dell: ["XPS 13", "XPS 15", "Inspiron 15"],
+                    hp: ["Pavilion 15", "EliteBook", "Envy 13"]
+                },
+                colors: {
+                    "MacBook Air M1": ["Space Gray", "Silver", "Gold"],
+                    "MacBook Air M2": ["Midnight", "Starlight", "Space Gray", "Silver"],
+                    "MacBook Pro 13\"": ["Space Gray", "Silver"],
+                    "MacBook Pro 14\"": ["Space Gray", "Silver"],
+                    "XPS 13": ["Platinum Silver", "Frost"],
+                    "XPS 15": ["Platinum Silver", "Frost"],
+                    "Inspiron 15": ["Platinum Silver", "Carbon Black"],
+                    "Pavilion 15": ["Natural Silver", "Warm Gold"],
+                    "EliteBook": ["Silver", "Black"],
+                    "Envy 13": ["Natural Silver", "Pale Gold"]
+                },
+                prices: {
+                    "MacBook Air M1": {"Schermvervanging": "€299", "Batterij": "€129", "Toetsenbord": "€189"},
+                    "MacBook Air M2": {"Schermvervanging": "€349", "Batterij": "€149", "Toetsenbord": "€199"},
+                    "MacBook Pro 13\"": {"Schermvervanging": "€399", "Batterij": "€159", "Toetsenbord": "€229"},
+                    "MacBook Pro 14\"": {"Schermvervanging": "€499", "Batterij": "€189", "Toetsenbord": "€249"},
+                    "XPS 13": {"Schermvervanging": "€279", "Batterij": "€119", "Toetsenbord": "€159"},
+                    "XPS 15": {"Schermvervanging": "€329", "Batterij": "€139", "Toetsenbord": "€179"},
+                    "Inspiron 15": {"Schermvervanging": "€199", "Batterij": "€89", "Toetsenbord": "€119"},
+                    "Pavilion 15": {"Schermvervanging": "€219", "Batterij": "€99", "Toetsenbord": "€129"},
+                    "EliteBook": {"Schermvervanging": "€289", "Batterij": "€129", "Toetsenbord": "€169"},
+                    "Envy 13": {"Schermvervanging": "€259", "Batterij": "€109", "Toetsenbord": "€149"}
+                },
+                cards: [
+                    {icon: "laptop_chromebook", title: "Schermvervanging", price: "Vanaf €199", desc: "Gebroken of beschadigd scherm? Wij vervangen het vakkundig en snel."},
+                    {icon: "battery_charging_full", title: "Batterij Vervangen", price: "Vanaf €89", desc: "Korte batterijduur? Een nieuwe batterij zorgt voor langere werktijd."},
+                    {icon: "keyboard", title: "Toetsenbord Reparatie", price: "Vanaf €119", desc: "Defecte toetsen of morsen? Wij repareren of vervangen uw toetsenbord."},
+                    {icon: "memory", title: "Upgrade SSD/RAM", price: "Vanaf €149", desc: "Meer snelheid nodig? Wij upgraden uw opslag en werkgeheugen.", badge: "slate"}
+                ]
+            },
+            tablet: {
+                title: "Veelvoorkomende Tablet Reparaties",
+                brands: {
+                    apple: ["iPad 9th Gen", "iPad 10th Gen", "iPad Air", "iPad Pro 11\"", "iPad Pro 12.9\""],
+                    samsung: ["Galaxy Tab S8", "Galaxy Tab S9", "Galaxy Tab A8"],
+                    microsoft: ["Surface Pro 8", "Surface Pro 9"]
+                },
+                colors: {
+                    "iPad 9th Gen": ["Space Gray", "Silver"],
+                    "iPad 10th Gen": ["Silver", "Blue", "Pink", "Yellow"],
+                    "iPad Air": ["Space Gray", "Starlight", "Pink", "Purple", "Blue"],
+                    "iPad Pro 11\"": ["Space Gray", "Silver"],
+                    "iPad Pro 12.9\"": ["Space Gray", "Silver"],
+                    "Galaxy Tab S8": ["Graphite", "Silver", "Pink Gold"],
+                    "Galaxy Tab S9": ["Graphite", "Beige"],
+                    "Galaxy Tab A8": ["Gray", "Silver", "Pink Gold"],
+                    "Surface Pro 8": ["Platinum", "Graphite"],
+                    "Surface Pro 9": ["Platinum", "Graphite", "Sapphire", "Forest"]
+                },
+                prices: {
+                    "iPad 9th Gen": {"Schermvervanging": "€149", "Batterij": "€89", "Oplaadpoort": "€79"},
+                    "iPad 10th Gen": {"Schermvervanging": "€189", "Batterij": "€99", "Oplaadpoort": "€89"},
+                    "iPad Air": {"Schermvervanging": "€229", "Batterij": "€119", "Oplaadpoort": "€99"},
+                    "iPad Pro 11\"": {"Schermvervanging": "€349", "Batterij": "€149", "Oplaadpoort": "€119"},
+                    "iPad Pro 12.9\"": {"Schermvervanging": "€449", "Batterij": "€169", "Oplaadpoort": "€129"},
+                    "Galaxy Tab S8": {"Schermvervanging": "€199", "Batterij": "€99", "Oplaadpoort": "€89"},
+                    "Galaxy Tab S9": {"Schermvervanging": "€229", "Batterij": "€109", "Oplaadpoort": "€99"},
+                    "Galaxy Tab A8": {"Schermvervanging": "€139", "Batterij": "€79", "Oplaadpoort": "€69"},
+                    "Surface Pro 8": {"Schermvervanging": "€399", "Batterij": "€159", "Oplaadpoort": "€119"},
+                    "Surface Pro 9": {"Schermvervanging": "€449", "Batterij": "€179", "Oplaadpoort": "€129"}
+                },
+                cards: [
+                    {icon: "tablet", title: "Schermvervanging", price: "Vanaf €139", desc: "Gebarsten of niet-werkend scherm? Wij herstellen uw tablet."},
+                    {icon: "battery_std", title: "Batterij Vervangen", price: "Vanaf €79", desc: "Batterij houdt het niet lang vol? Een nieuwe batterij verlengt de gebruikstijd."},
+                    {icon: "power", title: "Oplaadpoort", price: "Vanaf €69", desc: "Problemen met opladen? Wij vervangen uw oplaadpoort."},
+                    {icon: "water_drop", title: "Waterschade", price: "Op aanvraag", desc: "Tablet nat geworden? Wij reinigen en repareren waterschade.", badge: "slate"}
+                ]
+            }
+        };
+
+        let currentDevice = 'smartphone';
+
+        // --- Functions to update UI based on device type ---
+        function updateRepairCards(device) {
+            const cards = deviceData[device].cards;
+            const container = document.getElementById('repairCards');
+            container.innerHTML = '';
+
+            cards.forEach(card => {
+                const badgeClass = card.badge === 'slate'
+                    ? 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
+                    : 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400';
+
+                container.innerHTML += `
+                    <div class="flex flex-row gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#1A2633] p-6 hover:shadow-md transition-shadow">
+                        <div class="text-primary shrink-0 bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center">
+                            <span class="material-symbols-outlined">${card.icon}</span>
+                        </div>
+                        <div class="flex flex-col gap-1 flex-1">
+                            <div class="flex justify-between items-start">
+                                <h2 class="text-slate-900 dark:text-white text-lg font-bold">${card.title}</h2>
+                                <span class="inline-block ${badgeClass} text-xs font-bold px-2 py-1 rounded">${card.price}</span>
+                            </div>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">${card.desc}</p>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        function updateTitle(device) {
+            document.getElementById('repairTitle').textContent = deviceData[device].title;
+        }
+
+        function updateBrandOptions(device) {
+            const brandSelect = document.getElementById('brandSelect');
+            brandSelect.innerHTML = '<option value="">Selecteer merk...</option>';
+
+            Object.keys(deviceData[device].brands).forEach(brand => {
+                const brandName = brand.charAt(0).toUpperCase() + brand.slice(1);
+                brandSelect.innerHTML += `<option value="${brand}">${brandName}</option>`;
+            });
+        }
+
+        function switchDeviceTab(device) {
+            currentDevice = device;
+
+            // Update visual state of tabs
+            document.querySelectorAll('.device-tab').forEach(tab => {
+                const tabDevice = tab.getAttribute('data-device');
+                const icon = tab.querySelector('.tab-icon');
+                const text = tab.querySelector('.tab-text');
+
+                if (tabDevice === device) {
+                    // Active state
+                    tab.classList.remove('border-b-transparent', 'hover:border-b-slate-300', 'dark:hover:border-b-slate-600');
+                    tab.classList.add('border-b-primary');
+                    if (icon) {
+                        icon.classList.remove('text-slate-400', 'dark:text-slate-500', 'group-hover:text-slate-600', 'dark:group-hover:text-slate-300');
+                        icon.classList.add('text-primary');
+                    }
+                    if (text) {
+                        text.classList.remove('text-slate-500', 'dark:text-slate-400', 'group-hover:text-slate-700', 'dark:group-hover:text-slate-200');
+                        text.classList.add('text-primary');
+                    }
+                } else {
+                    // Inactive state
+                    tab.classList.remove('border-b-primary');
+                    tab.classList.add('border-b-transparent', 'hover:border-b-slate-300', 'dark:hover:border-b-slate-600');
+                    if (icon) {
+                        icon.classList.remove('text-primary');
+                        icon.classList.add('text-slate-400', 'dark:text-slate-500', 'group-hover:text-slate-600', 'dark:group-hover:text-slate-300');
+                    }
+                    if (text) {
+                        text.classList.remove('text-primary');
+                        text.classList.add('text-slate-500', 'dark:text-slate-400', 'group-hover:text-slate-700', 'dark:group-hover:text-slate-200');
+                    }
+                }
+            });
+
+            // Update content
+            updateTitle(device);
+            updateRepairCards(device);
+            updateBrandOptions(device);
+
+            // Reset dropdowns
+            document.getElementById('modelSelect').innerHTML = '<option value="">Selecteer eerst een merk...</option>';
+            document.getElementById('modelSelect').disabled = true;
+            document.getElementById('colorSelect').innerHTML = '<option value="">Selecteer eerst een model...</option>';
+            document.getElementById('colorSelect').disabled = true;
+            document.getElementById('repairPrices').classList.add('hidden');
+        }
+
+        // --- Device tab click handlers ---
+        document.querySelectorAll('.device-tab').forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
+                const device = tab.getAttribute('data-device');
+                switchDeviceTab(device);
+            });
+        });
+
+        // --- Initialize with smartphone ---
+        switchDeviceTab('smartphone');
+
         // --- Scroll buttons ---
         const scrollToSection = (selector) => {
             const element = document.querySelector(selector);
             if (element) element.scrollIntoView({behavior: "smooth", block: "start"});
         };
 
-            // Check for hash in URL on load and scroll smoothly
-            if (window.location.hash) {
-                const targetId = window.location.hash;
-                const targetElement = document.querySelector(targetId);
+        // Check for hash in URL on load and scroll smoothly
+        if (window.location.hash) {
+            const targetId = window.location.hash;
+            const targetElement = document.querySelector(targetId);
 
-                // clear hash temporarily to prevent instant jump by browser
-                history.replaceState(null, null, ' ');
+            // clear hash temporarily to prevent instant jump by browser
+            history.replaceState(null, null, ' ');
 
-                if (targetElement) {
-                    // Small delay to ensure render and then scroll
-                    setTimeout(() => {
-                         targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                         // Restore hash to URL without jumping
-                         history.replaceState(null, null, targetId);
-                    }, 100);
-                }
+            if (targetElement) {
+                // Small delay to ensure render and then scroll
+                setTimeout(() => {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Restore hash to URL without jumping
+                    history.replaceState(null, null, targetId);
+                }, 100);
             }
+        }
 
         document.querySelectorAll(".scroll-afspraak").forEach(btn => btn.addEventListener("click", () => scrollToSection("#afspraak")));
         document.querySelectorAll(".scroll-prijzen").forEach(btn => btn.addEventListener("click", () => scrollToSection("#prijzen")));
 
-            // --- Repair dropdown ---
-            const openDropdownBtn = document.getElementById("openRepairDropdown");
-            const dropdown = document.getElementById("repairDropdown");
+        // --- Repair dropdown ---
+        const openDropdownBtn = document.getElementById("openRepairDropdown");
+        const dropdown = document.getElementById("repairDropdown");
         const brandSelect = document.getElementById("brandSelect");
         const modelSelect = document.getElementById("modelSelect");
         const colorSelect = document.getElementById("colorSelect");
         const pricesDiv = document.getElementById("repairPrices");
         const pricesList = document.getElementById("pricesList");
-
-        const models = {
-            apple: ["iPhone 12", "iPhone 13", "iPhone 14", "iPhone 15"],
-            samsung: ["Galaxy S21", "Galaxy S22", "Galaxy S23"],
-            google: ["Pixel 6", "Pixel 7", "Pixel 8"]
-        };
-
-        const colors = {
-            "iPhone 12": ["Zwart", "Wit", "Blauw", "Rood"],
-            "iPhone 13": ["Zwart", "Wit", "Roze", "Groen"],
-            "iPhone 14": ["Middernacht", "Sterrenlicht", "Paars"],
-            "iPhone 15": ["Zwart", "Blauw", "Groen", "Roze"],
-            "Galaxy S21": ["Grey", "Violet", "White"],
-            "Galaxy S22": ["Black", "Rose Gold", "White"],
-            "Galaxy S23": ["Black", "Green", "Cream"],
-            "Pixel 6": ["Stormy Black", "Kinda Coral"],
-            "Pixel 7": ["Snow", "Obsidian"],
-            "Pixel 8": ["Hazel", "Rose"]
-        };
-
-        const prices = {
-            "iPhone 12": {"Schermvervanging": "€59", "Batterij": "€39", "Waterschade": "Op aanvraag"},
-            "iPhone 13": {"Schermvervanging": "€69", "Batterij": "€45", "Waterschade": "Op aanvraag"},
-            "iPhone 14": {"Schermvervanging": "€79", "Batterij": "€49", "Waterschade": "Op aanvraag"},
-            "iPhone 15": {"Schermvervanging": "€89", "Batterij": "€55", "Waterschade": "Op aanvraag"},
-            "Galaxy S21": {"Schermvervanging": "€65", "Batterij": "€40", "Waterschade": "Op aanvraag"},
-            "Galaxy S22": {"Schermvervanging": "€75", "Batterij": "€45", "Waterschade": "Op aanvraag"},
-            "Galaxy S23": {"Schermvervanging": "€85", "Batterij": "€50", "Waterschade": "Op aanvraag"},
-            "Pixel 6": {"Schermvervanging": "€60", "Batterij": "€42", "Waterschade": "Op aanvraag"},
-            "Pixel 7": {"Schermvervanging": "€70", "Batterij": "€48", "Waterschade": "Op aanvraag"},
-            "Pixel 8": {"Schermvervanging": "€80", "Batterij": "€52", "Waterschade": "Op aanvraag"}
-        };
 
         // Toggle dropdown visibility
         let isDropdownOpen = false;
@@ -548,8 +743,8 @@
             modelSelect.disabled = false;
             colorSelect.disabled = true;
 
-            if (models[brand]) {
-                models[brand].forEach(model => {
+            if (deviceData[currentDevice].brands[brand]) {
+                deviceData[currentDevice].brands[brand].forEach(model => {
                     modelSelect.innerHTML += `<option value='${model}'>${model}</option>`;
                 });
             }
@@ -564,8 +759,8 @@
 
             // Update prices
             pricesList.innerHTML = "";
-            if (prices[model]) {
-                for (const [service, price] of Object.entries(prices[model])) {
+            if (deviceData[currentDevice].prices[model]) {
+                for (const [service, price] of Object.entries(deviceData[currentDevice].prices[model])) {
                     const li = document.createElement("li");
                     li.className = "flex justify-between items-center py-2 border-b border-slate-200 dark:border-slate-700 last:border-b-0";
                     li.innerHTML = `
@@ -579,12 +774,47 @@
                 pricesDiv.classList.add("hidden");
             }
 
-            if (colors[model]) {
-                colors[model].forEach(color => {
+            if (deviceData[currentDevice].colors[model]) {
+                deviceData[currentDevice].colors[model].forEach(color => {
                     colorSelect.innerHTML += `<option value='${color}'>${color}</option>`;
                 });
             }
         });
+
+        // --- Mobile menu toggle ---
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+
+        // --- Dark mode toggle ---
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const htmlElement = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            htmlElement.classList.add('dark');
+        } else {
+            htmlElement.classList.remove('dark');
+        }
+
+        // Toggle dark mode on button click
+        if (darkModeToggle) {
+            darkModeToggle.addEventListener('click', () => {
+                if (htmlElement.classList.contains('dark')) {
+                    htmlElement.classList.remove('dark');
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    htmlElement.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                }
+            });
+        }
 
     });
 </script>
