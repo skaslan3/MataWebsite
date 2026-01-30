@@ -6,11 +6,11 @@
     <title>Homepage Mata Computers</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Filled" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
           rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"/>
     <script id="tailwind-config">
         tailwind.config = {
@@ -39,42 +39,42 @@
 </head>
 <body>
 
-<div class="w-full bg-white dark:bg-[#1a2632] border-b border-[#e7edf3] dark:border-[#2a3b4d]">
+<div class="w-full bg-white dark:bg-[#1a2632] border-b border-[#e7edf3] dark:border-[#2a3b4d] sticky top-0 z-50">
     <div class="px-6 md:px-10 py-3 max-w-[1440px] mx-auto w-full">
         <header class="flex items-center justify-between whitespace-nowrap">
 
             <a href="index.html" class="flex items-center gap-3">
-                <img src="images/mata-logo.png" alt="Mata Computers Logo" class="h-10 w-auto">
+                <img src="images/mata-logo.png" alt="Mata Computers Logo" class="h-12 w-auto">
             </a>
 
             <!-- Navigation + buttons -->
             <div class="flex items-center gap-4 lg:gap-8">
                 <!-- Nav links -->
-                <nav class="hidden lg:flex items-center gap-6 xl:gap-9">
+                <nav class="hidden lg:flex items-center gap-3">
                     <div class="group relative">
-                        <a href="Producten.html" class="text-sm font-medium hover:text-primary">
+                        <a href="Producten.html" class="text-sm font-medium text-[#0d141b] dark:text-gray-200 hover:text-primary dark:hover:text-primary py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors inline-block">
                             Producten
                         </a>
 
-                        <div class="absolute left-0 mt-2 w-40 bg-white dark:bg-gray-800 shadow-lg rounded-md
-                                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                            <a href="Product1.html" class="block px-4 py-2 text-sm hover:bg-primary hover:text-white">
+                        <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#1a2632] shadow-xl rounded-xl border border-[#e7edf3] dark:border-[#2a3b4d]
+                                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all overflow-hidden">
+                            <a href="Product1.html" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
                                 Telefoons
                             </a>
-                            <a href="Product2.html" class="block px-4 py-2 text-sm hover:bg-primary hover:text-white">
+                            <a href="Product2.html" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
                                 Tablets & iPads
                             </a>
-                            <a href="Product3.html" class="block px-4 py-2 text-sm hover:bg-primary hover:text-white">
+                            <a href="Product3.html" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
                                 Laptops
                             </a>
-                            <a href="Product3.html" class="block px-4 py-2 text-sm hover:bg-primary hover:text-white">
+                            <a href="Product3.html" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors">
                                 Accessoires
                             </a>
                         </div>
                     </div>
 
-                    <a href="Reparaties.html" class="text-sm font-medium hover:text-primary">Reparaties</a>
-                    <a href="Contact.html" class="text-sm font-medium hover:text-primary">Over ons</a>
+                    <a href="Reparaties.html" class="text-sm font-medium text-[#0d141b] dark:text-gray-200 hover:text-primary dark:hover:text-primary py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors">Reparaties</a>
+                    <a href="Contact.html" class="text-sm font-medium text-[#0d141b] dark:text-gray-200 hover:text-primary dark:hover:text-primary py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors">Over ons</a>
                 </nav>
 
                 <!-- Buttons -->
@@ -84,6 +84,16 @@
                             Maak Afspraak
                         </button>
                     </a>
+
+                    <!-- Dark mode toggle button -->
+                    <button
+                            id="dark-mode-toggle"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                            aria-label="Toggle dark mode"
+                    >
+                        <span class="material-symbols-outlined dark:hidden">dark_mode</span>
+                        <span class="material-symbols-outlined hidden dark:inline">light_mode</span>
+                    </button>
 
                     <!-- Mobile menu button - now in correct location -->
                     <button
@@ -99,18 +109,18 @@
     </div>
 
     <!-- Mobile menu - moved inside header container -->
-    <div id="mobile-menu" class="hidden lg:hidden px-6 pb-6 pt-4 border-t border-[#e7edf3] dark:border-[#2a3b4d]">
+    <div id="mobile-menu" class="hidden lg:hidden px-6 pb-6 pt-4 border-t border-[#e7edf3] dark:border-[#2a3b4d] bg-white dark:bg-[#1a2632]">
         <nav class="flex flex-col gap-2">
-            <a href="Producten.html" class="font-medium py-3 px-4 rounded-lg hover:bg-[#f6f7f8] dark:hover:bg-[#1a2632] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
+            <a href="Producten.html" class="font-medium text-[#0d141b] dark:text-gray-200 py-3 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
                 Producten
             </a>
-            <a href="Reparaties.html" class="font-medium py-3 px-4 rounded-lg hover:bg-[#f6f7f8] dark:hover:bg-[#1a2632] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
+            <a href="Reparaties.html" class="font-medium text-[#0d141b] dark:text-gray-200 py-3 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
                 Reparaties
             </a>
-            <a href="Contact.html" class="font-medium py-3 px-4 rounded-lg hover:bg-[#f6f7f8] dark:hover:bg-[#1a2632] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
+            <a href="Contact.html" class="font-medium text-[#0d141b] dark:text-gray-200 py-3 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
                 Over ons
             </a>
-            <a href="Reparaties.html#afspraak" class="font-bold text-white bg-primary hover:bg-blue-600 py-3 px-4 rounded-lg transition-colors mt-2 text-center">
+            <a href="Reparaties.html#afspraak" class="font-bold text-white bg-primary hover:bg-blue-600 py-3 px-4 rounded-lg transition-colors mt-2 text-center shadow-md">
                 Maak Afspraak
             </a>
         </nav>
@@ -127,7 +137,7 @@
                         <h1 class="text-[#0d141b] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-5xl lg:text-6xl">
                             De Nieuwste Tech,<br/>De Beste Service
                         </h1>
-                        <h2 class="text-[#0d141b] dark:text-gray-300 text-lg font-normal leading-relaxed max-w-xl">
+                        <h2 class="text-[#0d141b] dark:text-gray-200 text-lg font-normal leading-relaxed max-w-xl">
                             Ontdek ons uitgebreide aanbod smartphones en laptops, of kom langs voor een snelle
                             reparatie.
                         </h2>
@@ -146,12 +156,12 @@
                     </div>
                     <div class="flex gap-6 mt-2">
                         <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-green-600" style="font-size: 20px;">check_circle</span>
-                            <span class="text-sm font-medium text-[#0d141b] dark:text-gray-300">12 Mnd Garantie</span>
+                            <span class="material-symbols-outlined text-green-600 dark:text-green-400" style="font-size: 20px;">check_circle</span>
+                            <span class="text-sm font-medium text-[#0d141b] dark:text-gray-200">12 Mnd Garantie</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-green-600" style="font-size: 20px;">check_circle</span>
-                            <span class="text-sm font-medium text-[#0d141b] dark:text-gray-300">Snel en vakkundig </span>
+                            <span class="material-symbols-outlined text-green-600 dark:text-green-400" style="font-size: 20px;">check_circle</span>
+                            <span class="text-sm font-medium text-[#0d141b] dark:text-gray-200">Snel en vakkundig </span>
                         </div>
                     </div>
                 </div>
@@ -184,7 +194,7 @@
                             <p class="text-[#0d141b] dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">
                                 iPhone 15 Pro</p>
                         </div>
-                        <p class="text-[#4c739a] dark:text-gray-400 text-sm font-normal leading-normal">Vanaf
+                        <p class="text-[#4c739a] dark:text-gray-300 text-sm font-normal leading-normal">Vanaf
                             €1.099</p>
                         <a class="mt-3 w-full py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white font-semibold text-sm transition-colors text-center inline-block"
                            href="Producten.html">
@@ -204,7 +214,7 @@
                             <p class="text-[#0d141b] dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">
                                 Samsung S24</p>
                         </div>
-                        <p class="text-[#4c739a] dark:text-gray-400 text-sm font-normal leading-normal">Vanaf
+                        <p class="text-[#4c739a] dark:text-gray-300 text-sm font-normal leading-normal">Vanaf
                             €899</p>
                         <a class="mt-3 w-full py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white font-semibold text-sm transition-colors text-center inline-block"
                            href="Producten.html">
@@ -224,7 +234,7 @@
                             <p class="text-[#0d141b] dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">
                                 MacBook Air</p>
                         </div>
-                        <p class="text-[#4c739a] dark:text-gray-400 text-sm font-normal leading-normal">Vanaf
+                        <p class="text-[#4c739a] dark:text-gray-300 text-sm font-normal leading-normal">Vanaf
                             €1.099</p>
                         <button class="mt-3 w-full py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white font-semibold text-sm transition-colors">
                             Bekijken
@@ -244,7 +254,7 @@
                             <p class="text-[#0d141b] dark:text-white text-lg font-bold leading-normal group-hover:text-primary transition-colors">
                                 Accessoires</p>
                         </div>
-                        <p class="text-[#4c739a] dark:text-gray-400 text-sm font-normal leading-normal">Vanaf
+                        <p class="text-[#4c739a] dark:text-gray-300 text-sm font-normal leading-normal">Vanaf
                             €19,99</p>
                         <button class="mt-3 w-full py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white font-semibold text-sm transition-colors">
                             Bekijken
@@ -283,7 +293,7 @@
                     </div>
                     <div class="flex flex-col gap-2">
                         <h2 class="text-[#0d141b] dark:text-white text-xl font-bold leading-tight">Diagnose</h2>
-                        <p class="text-[#4c739a] dark:text-gray-400 text-base font-normal leading-normal">
+                        <p class="text-[#4c739a] dark:text-gray-300 text-base font-normal leading-normal">
                             Weet u niet wat er mis is? Wij voeren een gratis en vrijblijvende diagnose uit om het
                             probleem te vinden.
                         </p>
@@ -296,7 +306,7 @@
                     </div>
                     <div class="flex flex-col gap-2">
                         <h2 class="text-[#0d141b] dark:text-white text-xl font-bold leading-tight">Reparatie</h2>
-                        <p class="text-[#4c739a] dark:text-gray-400 text-base font-normal leading-normal">
+                        <p class="text-[#4c739a] dark:text-gray-300 text-base font-normal leading-normal">
                             Onze gecertificeerde experts repareren uw toestel met originele onderdelen. Vaak al
                             binnen 30 minuten klaar.
                         </p>
@@ -309,7 +319,7 @@
                     </div>
                     <div class="flex flex-col gap-2">
                         <h2 class="text-[#0d141b] dark:text-white text-xl font-bold leading-tight">Garantie</h2>
-                        <p class="text-[#4c739a] dark:text-gray-400 text-base font-normal leading-normal">
+                        <p class="text-[#4c739a] dark:text-gray-300 text-base font-normal leading-normal">
                             Wij staan achter onze kwaliteit. U krijgt standaard 12 maanden garantie op de reparatie
                             en de onderdelen.
                         </p>
@@ -330,11 +340,11 @@
                     </div>
                     <h2 class="text-lg font-bold">Telefoonwinkel</h2>
                 </div>
-                <p class="text-[#4c739a] dark:text-gray-400 text-sm">
+                <p class="text-[#4c739a] dark:text-gray-300 text-sm">
                     Uw specialist in smartphones, laptops en reparaties. Bezoek onze winkel of bestel eenvoudig
                     online.
                 </p>
-                <div class="flex gap-4 text-[#4c739a] dark:text-gray-400">
+                <div class="flex gap-4 text-[#4c739a] dark:text-gray-300">
                     <!-- Social icons placeholders -->
                     <a class="hover:text-primary" href="#"><span class="material-symbols-outlined">public</span></a>
                     <a class="hover:text-primary" href="#"><span
@@ -343,7 +353,7 @@
             </div>
             <div class="flex flex-col gap-4">
                 <h3 class="text-[#0d141b] dark:text-white font-bold">Producten</h3>
-                <div class="flex flex-col gap-2 text-[#4c739a] dark:text-gray-400 text-sm">
+                <div class="flex flex-col gap-2 text-[#4c739a] dark:text-gray-300 text-sm">
                     <a class="hover:text-primary transition-colors" href="#">Smartphones</a>
                     <a class="hover:text-primary transition-colors" href="#">Tablets</a>
                     <a class="hover:text-primary transition-colors" href="#">Laptops</a>
@@ -352,7 +362,7 @@
             </div>
             <div class="flex flex-col gap-4">
                 <h3 class="text-[#0d141b] dark:text-white font-bold">Service</h3>
-                <div class="flex flex-col gap-2 text-[#4c739a] dark:text-gray-400 text-sm">
+                <div class="flex flex-col gap-2 text-[#4c739a] dark:text-gray-300 text-sm">
                     <a class="hover:text-primary transition-colors" href="#">Reparatie aanmelden</a>
                     <a class="hover:text-primary transition-colors" href="#">Status checken</a>
                     <a class="hover:text-primary transition-colors" href="#">Zakelijk</a>
@@ -361,7 +371,7 @@
             </div>
             <div class="flex flex-col gap-4">
                 <h3 class="text-[#0d141b] dark:text-white font-bold">Openingstijden</h3>
-                <div class="flex flex-col gap-2 text-[#4c739a] dark:text-gray-400 text-sm">
+                <div class="flex flex-col gap-2 text-[#4c739a] dark:text-gray-300 text-sm">
                     <div class="flex justify-between max-w-[200px]"><span>Ma:</span> <span>12:00 - 17:00</span>
                     </div>
                     <div class="flex justify-between max-w-[200px]"><span>Di - Za:</span> <span>10:00 - 17:00</span>
@@ -370,7 +380,7 @@
                 </div>
             </div>
         </div>
-        <div class="border-t border-[#e7edf3] dark:border-[#2a3b4d] mt-10 pt-6 flex flex-col md:flex-row justify-between gap-4 text-xs text-[#4c739a] dark:text-gray-500">
+        <div class="border-t border-[#e7edf3] dark:border-[#2a3b4d] mt-10 pt-6 flex flex-col md:flex-row justify-between gap-4 text-xs text-[#4c739a] dark:text-gray-400">
             <p>© 2024 Telefoonwinkel. Alle rechten voorbehouden.</p>
             <div class="flex gap-4">
                 <a class="hover:underline" href="#">Privacy Policy</a>
@@ -381,15 +391,41 @@
 </footer>
 </div>
 
-<!-- JavaScript for mobile menu - placed at end of body -->
+<!-- JavaScript for mobile menu and dark mode - placed at end of body -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
+        // Mobile menu toggle
         const btn = document.getElementById('menu-btn');
         const menu = document.getElementById('mobile-menu');
 
         if (btn && menu) {
             btn.addEventListener('click', () => {
                 menu.classList.toggle('hidden');
+            });
+        }
+
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const htmlElement = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            htmlElement.classList.add('dark');
+        } else {
+            htmlElement.classList.remove('dark');
+        }
+
+        // Toggle dark mode on button click
+        if (darkModeToggle) {
+            darkModeToggle.addEventListener('click', () => {
+                if (htmlElement.classList.contains('dark')) {
+                    htmlElement.classList.remove('dark');
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    htmlElement.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                }
             });
         }
     });
