@@ -44,61 +44,94 @@
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 flex flex-col min-h-screen">
-<!-- Top Navigation -->
-<header class="sticky top-0 z-50 w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
-    <div class="w-full bg-white dark:bg-[#1a2632] border-b border-[#e7edf3] dark:border-[#2a3b4d]">
-        <div class="px-6 md:px-10 py-3 max-w-[1440px] mx-auto w-full">
-            <header class="flex items-center justify-between whitespace-nowrap">
+<!-- Top Navigation (gedeeld met homepage) -->
+<div class="w-full bg-white dark:bg-[#1a2632] border-b border-[#e7edf3] dark:border-[#2a3b4d] sticky top-0 z-50">
+    <div class="px-6 md:px-10 py-3 max-w-[1440px] mx-auto w-full">
+        <header class="flex items-center justify-between whitespace-nowrap">
 
-                <a href="index.html" class="flex items-center justify-start">
-                    <img src="images/mata-logo.png" alt="Mata Computers Logo" class="h-10 w-auto">
-                </a>
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="images/mata-logo.png" alt="Mata Computers Logo" class="h-12 w-auto">
+            </a>
 
-                <!-- Navigation + buttons -->
-                <div class="flex items-center gap-4 lg:gap-8">
-
-                    <!-- Nav links -->
-                    <nav class="hidden lg:flex items-center gap-6 xl:gap-9">
-                        <div class="group relative">
-                            <a href="Producten.html" class="text-sm font-medium hover:text-primary">
-                                Producten
-                            </a>
-
-                            <div class="absolute left-0 mt-2 w-40 bg-white dark:bg-gray-800 shadow-lg rounded-md
-                                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                                <a href="Product1.html" class="block px-4 py-2 text-sm hover:bg-primary hover:text-white">
-                                    Telefoons
-                                </a>
-                                <a href="Product2.html" class="block px-4 py-2 text-sm hover:bg-primary hover:text-white">
-                                    Tablets & iPads
-                                </a>
-                                <a href="Product3.html" class="block px-4 py-2 text-sm hover:bg-primary hover:text-white">
-                                    Laptops
-                                </a>
-                                <a href="Product3.html" class="block px-4 py-2 text-sm hover:bg-primary hover:text-white">
-                                    Accessoires
-                                </a>
-                            </div>
-                        </div>
-
-                        <a href="Reparaties.html" class="text-sm font-medium hover:text-primary">Reparaties</a>
-                        <a href="Contact.html" class="text-sm font-medium hover:text-primary">Over ons</a>
-                    </nav>
-
-                    <!-- Buttons -->
-                    <div class="flex gap-2">
-                        <a href="Reparaties.html#afspraak" class="hidden md:flex">
-                            <button class="h-10 px-4 bg-primary text-white rounded-lg font-bold text-sm">
-                                Maak Afspraak
-                            </button>
+            <!-- Navigation + buttons -->
+            <div class="flex items-center gap-4 lg:gap-8">
+                <!-- Nav links -->
+                <nav class="hidden lg:flex items-center gap-3">
+                    <div class="group relative">
+                        <a href="Producten.html" class="text-sm font-medium text-[#0d141b] dark:text-gray-200 hover:text-primary dark:hover:text-primary py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors inline-block">
+                            Producten
                         </a>
+
+                        <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#1a2632] shadow-xl rounded-xl border border-[#e7edf3] dark:border-[#2a3b4d]
+                                    opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all overflow-hidden">
+                            <a href="Product1.html" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
+                                Telefoons
+                            </a>
+                            <a href="Product2.html" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
+                                Tablets & iPads
+                            </a>
+                            <a href="Product3.html" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
+                                Laptops
+                            </a>
+                            <a href="Product3.html" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors">
+                                Accessoires
+                            </a>
+                        </div>
                     </div>
 
+                    <a href="Reparaties.html" class="text-sm font-medium text-[#0d141b] dark:text-gray-200 hover:text-primary dark:hover:text-primary py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors">Reparaties</a>
+                    <a href="Contact.html" class="text-sm font-medium text-[#0d141b] dark:text-gray-200 hover:text-primary dark:hover:text-primary py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors">Over ons</a>
+                </nav>
+
+                <!-- Buttons -->
+                <div class="flex gap-2">
+                    <a href="Reparaties.html#afspraak" class="hidden md:flex">
+                        <button class="h-10 px-4 bg-primary text-white rounded-lg font-bold text-sm">
+                            Maak Afspraak
+                        </button>
+                    </a>
+
+                    <!-- Dark mode toggle button -->
+                    <button
+                            id="dark-mode-toggle"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                            aria-label="Toggle dark mode"
+                    >
+                        <span class="material-symbols-outlined dark:hidden">dark_mode</span>
+                        <span class="material-symbols-outlined hidden dark:inline">light_mode</span>
+                    </button>
+
+                    <!-- Mobile menu button -->
+                    <button
+                            id="menu-btn"
+                            class="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
                 </div>
-            </header>
-        </div>
+
+            </div>
+        </header>
     </div>
-</header>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden lg:hidden px-6 pb-6 pt-4 border-t border-[#e7edf3] dark:border-[#2a3b4d] bg-white dark:bg-[#1a2632]">
+        <nav class="flex flex-col gap-2">
+            <a href="Producten.html" class="font-medium text-[#0d141b] dark:text-gray-200 py-3 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
+                Producten
+            </a>
+            <a href="Reparaties.html" class="font-medium text-[#0d141b] dark:text-gray-200 py-3 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
+                Reparaties
+            </a>
+            <a href="Contact.html" class="font-medium text-[#0d141b] dark:text-gray-200 py-3 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
+                Over ons
+            </a>
+            <a href="Reparaties.html#afspraak" class="font-bold text-white bg-primary hover:bg-blue-600 py-3 px-4 rounded-lg transition-colors mt-2 text-center shadow-md">
+                Maak Afspraak
+            </a>
+        </nav>
+    </div>
+</div>
 <!-- Main Content -->
 <main class="flex-grow w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Breadcrumbs & Header -->
@@ -509,4 +542,8 @@
         </div>
     </div>
 </footer>
+
+<!-- Gedeelde JavaScript voor hamburger-menu en dark mode -->
+<script src="main.js"></script>
+
 </body></html>
