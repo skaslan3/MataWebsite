@@ -6,6 +6,7 @@ ini_set('display_errors', 1);
 require 'db.php';
 
 try {
+
     // Let op: de tabel heet 'products', niet 'producten'
     $stmt = $pdo->query("SELECT * FROM products LIMIT 20");
     $producten = $stmt->fetchAll();
@@ -62,5 +63,14 @@ try {
 <p class="empty">
     Werkt dit? Mooi! Dan kunnen we ditzelfde principe in je echte pagina's inbouwen.
 </p>
+
+
+<form method="post" action="Upload.php" enctype="multipart/form-data">
+    <input type="file" name="image" required>
+    <button type="submit">Upload</button>
+</form>
+
+<img src="<?= $row['image'] ?>" alt="product">
+
 </body>
 </html>
