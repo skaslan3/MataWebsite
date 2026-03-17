@@ -64,13 +64,15 @@ try {
     Werkt dit? Mooi! Dan kunnen we ditzelfde principe in je echte pagina's inbouwen.
 </p>
 
-
 <form method="post" action="Upload.php" enctype="multipart/form-data">
+    <input type="text" name="merk" placeholder="Merk" required>
+    <input type="text" name="model" placeholder="Model" required>
+    <input type="number" name="prijs" step="0.01" placeholder="Prijs" required>
+
     <input type="file" name="image" required>
+
     <button type="submit">Upload</button>
 </form>
-
-<img src="<?= $row['image'] ?>" alt="product">
 
 </body>
 </html>

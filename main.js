@@ -33,5 +33,17 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Winkelmand badge updaten (als aanwezig)
+    const cartBadge = document.getElementById('cart-count');
+    function updateCartBadge() {
+        if (!cartBadge || !window.Cart) return;
+        const qty = window.Cart.qty();
+        cartBadge.textContent = String(qty);
+        cartBadge.classList.toggle('hidden', qty <= 0);
+    }
+
+    updateCartBadge();
+    window.addEventListener('cart:updated', updateCartBadge);
 });
 

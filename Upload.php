@@ -1,28 +1,29 @@
 <?php
 require 'db.php';
-// map waar images komen
+
 $uploadDir = 'uploads/';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    // extensie bepalen
+    $merk  = $_POST['merk'];
+    $model = $_POST['model'];
+    $prijs = $_POST['prijs'];
+
     $ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
-
-    // unieke bestandsnaam maken
     $fileName = uniqid() . '.' . $ext;
-
-    // volledig pad
     $filePath = $uploadDir . $fileName;
 
-    // bestand opslaan
     if (move_uploaded_file($_FILES['image']['tmp_name'], $filePath)) {
-        // filepath opslaan in database
+
         $stmt = $pdo->prepare(
-            "INSERT INTO products (image) VALUES (?)"
+            "INSERT INTO images (merk, model, prijs, image)
+             VALUES (?, ?, ?, ?)"
         );
-        $stmt->execute([$filePath]);
+
+        $stmt->execute([$merk, $model, $prijs, $filePath]);
 
         echo "Upload gelukt 👍";
+
     } else {
         echo "Upload mislukt ❌";
     }

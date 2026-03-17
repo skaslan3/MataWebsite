@@ -53,22 +53,22 @@
                 <!-- Nav links -->
                 <nav class="hidden lg:flex items-center gap-3">
                     <div class="group relative">
-                        <a href="Producten.php" class="text-sm font-medium text-[#0d141b] dark:text-gray-200 hover:text-primary dark:hover:text-primary py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors inline-block">
+                        <a href="Producten.html" class="text-sm font-medium text-[#0d141b] dark:text-gray-200 hover:text-primary dark:hover:text-primary py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors inline-block">
                             Producten
                         </a>
 
                         <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#1a2632] shadow-xl rounded-xl border border-[#e7edf3] dark:border-[#2a3b4d]
                                     opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all overflow-hidden">
-                            <a href="Producten.php?cat=telefoons" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
+                            <a href="Producten.html?cat=telefoons" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
                                 Telefoons
                             </a>
-                            <a href="Producten.php?cat=tablets" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
+                            <a href="Producten.html?cat=tablets" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
                                 Tablets & iPads
                             </a>
-                            <a href="Producten.php?cat=laptops" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
+                            <a href="Producten.html?cat=laptops" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d] last:border-b-0">
                                 Laptops
                             </a>
-                            <a href="Producten.php?cat=accessoires" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors">
+                            <a href="Producten.html?cat=accessoires" class="block px-4 py-3 text-sm text-[#0d141b] dark:text-gray-200 hover:bg-primary hover:text-white transition-colors">
                                 Accessoires
                             </a>
                         </div>
@@ -79,11 +79,16 @@
                 </nav>
 
                 <!-- Buttons -->
-                <div class="flex gap-2">
+                <div class="flex gap-2 items-center">
                     <a href="Reparaties.html#afspraak" class="hidden md:flex">
                         <button class="h-10 px-4 bg-primary text-white rounded-lg font-bold text-sm">
                             Maak Afspraak
                         </button>
+                    </a>
+
+                    <a href="Winkelmand.html" class="relative inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" aria-label="Winkelmand">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                        <span id="cart-count" class="hidden absolute -top-1 -right-1 bg-primary text-white text-[11px] font-bold leading-none px-1.5 py-1 rounded-full min-w-[20px] text-center">0</span>
                     </a>
 
                     <!-- Dark mode toggle button -->
@@ -112,8 +117,11 @@
     <!-- Mobile menu -->
     <div id="mobile-menu" class="hidden lg:hidden px-6 pb-6 pt-4 border-t border-[#e7edf3] dark:border-[#2a3b4d] bg-white dark:bg-[#1a2632]">
         <nav class="flex flex-col gap-2">
-            <a href="Producten.php" class="font-medium text-[#0d141b] dark:text-gray-200 py-3 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
+            <a href="Producten.html" class="font-medium text-[#0d141b] dark:text-gray-200 py-3 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
                 Producten
+            </a>
+            <a href="Winkelmand.html" class="font-medium text-[#0d141b] dark:text-gray-200 py-3 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
+                Winkelmand
             </a>
             <a href="Reparaties.html" class="font-medium text-[#0d141b] dark:text-gray-200 py-3 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-[#0d1419] transition-colors border-b border-[#e7edf3] dark:border-[#2a3b4d]">
                 Reparaties
@@ -410,19 +418,19 @@
         <div>
             <h3 class="text-slate-900 dark:text-white font-bold mb-4">Diensten</h3>
             <ul class="flex flex-col gap-2 text-sm text-slate-500 dark:text-slate-400">
-                <li><a class="hover:text-primary" href="#">iPhone Reparatie</a></li>
-                <li><a class="hover:text-primary" href="#">Samsung Reparatie</a></li>
-                <li><a class="hover:text-primary" href="#">MacBook Reparatie</a></li>
-                <li><a class="hover:text-primary" href="#">Waterschade</a></li>
+                <li><a class="hover:text-primary" href="Reparaties.html#prijzen">iPhone Reparatie</a></li>
+                <li><a class="hover:text-primary" href="Reparaties.html#prijzen">Samsung Reparatie</a></li>
+                <li><a class="hover:text-primary" href="Reparaties.html#prijzen">MacBook Reparatie</a></li>
+                <li><a class="hover:text-primary" href="Reparaties.html#prijzen">Waterschade</a></li>
             </ul>
         </div>
         <div>
             <h3 class="text-slate-900 dark:text-white font-bold mb-4">Winkel</h3>
             <ul class="flex flex-col gap-2 text-sm text-slate-500 dark:text-slate-400">
-                <li><a class="hover:text-primary" href="#">Refurbished iPhones</a></li>
-                <li><a class="hover:text-primary" href="#">Hoesjes &amp; Screenprotectors</a></li>
-                <li><a class="hover:text-primary" href="#">Opladers</a></li>
-                <li><a class="hover:text-primary" href="#">Zakelijk</a></li>
+                <li><a class="hover:text-primary" href="Producten.html?cat=telefoons">Refurbished iPhones</a></li>
+                <li><a class="hover:text-primary" href="Producten.html?cat=accessoires">Hoesjes &amp; Screenprotectors</a></li>
+                <li><a class="hover:text-primary" href="Producten.html?cat=accessoires">Opladers</a></li>
+                <li><a class="hover:text-primary" href="Contact.html">Zakelijk</a></li>
             </ul>
         </div>
         <div>
@@ -446,8 +454,8 @@
     <div class="max-w-[1200px] mx-auto border-t border-slate-200 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
         <p class="text-slate-400 text-sm">© 2025 TechFix Reparatieservice. Alle rechten voorbehouden.</p>
         <div class="flex gap-6">
-            <a class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-sm" href="#">Privacy</a>
-            <a class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-sm" href="#">Algemene
+            <a class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-sm" href="Privacy.html">Privacy</a>
+            <a class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-sm" href="Voorwaarden.html">Algemene
                 Voorwaarden</a>
         </div>
     </div>
@@ -785,6 +793,7 @@
 </script>
 
 <!-- Gedeelde JavaScript voor hamburger-menu en dark mode -->
+<script src="cart.js"></script>
 <script src="main.js"></script>
 
 
