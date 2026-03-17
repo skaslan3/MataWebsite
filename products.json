@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15 Pro 256GB",
+    "price": 1199.0,
+    "description": "A17 Pro, titanium design en ProMotion display.",
+    "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuAq2e4yDQzVoLHtGl7KmnzSzR28Bbj-St1itrvDhu5gT7No95fXgAavfLQhF8WC5l8JC1aQChdn24cxE7tdYkun-BACNS2yKnqr8kFQXaYZ0vYEHmGdsmqewZLbxRENlFdld4UnwMQWluQuyAv8aHIEiZxcVCXZQcN2eGzC8JBVJdLLbUg2t6IstHhEXMfvV6uIGpfaRd47BFl27VZX3ROs0zVsSFq4c_LL0zoYcdrCvx0lQ86LB5Dt6kiXp09TAYZcO4iiG-FS10KZ",
+    "category": "Telefoons",
+    "created_at": "2026-01-10"
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S24 128GB",
+    "price": 899.0,
+    "description": "Snel, helder AMOLED en topcamera.",
+    "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCItbi6isVSBpT7H7QTSszm6EM7oCQcrPzHpIL8sjQADrfpXO8gr5kjgeU83A4zfCYHSnPIApsVsnBox5B7rDjNYLcadcVKzuKf7tJncpbu5-9TjKJcdB25mDgkQeR-517n7OX-k9ck1sBgXsLrqTy_H8dV-E53LdxRpjySP46i4uQzkUQJS2Wc9zlCxi5exUKC3TdYE3EpuSu5Zom5Mz0J9z5HFZjHgNBuqOT3UCom_wmhfXrE6lT2i9WOpvX3JJo1qrs5apVGzYuw",
+    "category": "Telefoons",
+    "created_at": "2026-01-05"
+  },
+  {
+    "id": 3,
+    "name": "iPad Air 2022 WiFi 64GB",
+    "price": 689.0,
+    "description": "Licht, snel en perfect voor studie en creatie.",
+    "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuD3GhSGxTNJtOACgoM4D8IpeGYF7ZjkpFdYoc7_2zQd-g8UY5Ld05z90qafvwHt2J-gkcnz00fP6OOczg69_aRBw2IRWsYQoq-xPYG8jvLuEzVEduzs0y-tq13pE_C94Khn5fyQSfixfBqIR_TkG4A1UW4OnqKZyeF3xaxqXh148DXNlqO3JsFm_zrS0FYb9oz4IfbRbErEIJFsZyuKYfCwy8mzuKyuQhJ7mQ1XgC8fJTcNTZWo4w0fztkno-noBXEHsQvmmTenA5Px",
+    "category": "Tablets",
+    "created_at": "2025-12-20"
+  },
+  {
+    "id": 4,
+    "name": "MacBook Pro 14\" M2 Pro",
+    "price": 2249.0,
+    "description": "Krachtige laptop voor pro-workflows.",
+    "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuC2JF7kJjr886RKA9JNGE6m2uNTRBUhfHL9id4fFriO19lbHITl_t5hTy0cD_1bnwWh1RBKwyaHOK6rlF2ez03NrvG1xweDSOLw02REzDuiygPmXCJYLn2ik9eHDxwMuELp6YinzoyNnfegYH_z_PxMMP7XnqNrh4cYaMRh6hi5IlUfgH7X6Xo8oaCUmL5gjE69MSc8_DrVPolDpdbXd33mRcasHLQcJZ0eNywlB8NWUhUzbctCNIXoVuAptBL8Y73ihr44KfL7Qz1N",
+    "category": "Laptops",
+    "created_at": "2025-11-11"
+  },
+  {
+    "id": 5,
+    "name": "Apple MagSafe Oplader",
+    "price": 15.0,
+    "description": "Snel en makkelijk draadloos laden.",
+    "image_url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDC-23Eij2dyzGDCVrz8rVS2E-60Ck5GfrP7R_g0_y7OP2ejTHXM2wrXGyAZQB09JwNbr1C1204GHHk0OVXVhZW3T99RJmy84xUtiPw74ffsATf1t73CZ84skUoMCvn1b9gQD_6c3z5bBEodK6AZq4UEYyU5j-1aKTwZ5lqdm9pftY3P31j5QyPb8gXnTcNCZKFTc7SqoN8pYaqfCccxMSLwWVMFMzhKKC8VXsNaMSuOouZUmz-nMG-ejM7OWXDg-kH-bhGIhtSqyAr",
+    "category": "Accessoires",
+    "created_at": "2025-10-02"
+  }
+]
